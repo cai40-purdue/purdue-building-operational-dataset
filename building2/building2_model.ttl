@@ -1,0 +1,102 @@
+@prefix bldg: <urn:building2/> .
+@prefix brick: <https://brickschema.org/schema/Brick#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ref: <https://brickschema.org/schema/Brick/ref#> .
+
+bldg:AHU1 a brick:Air_Handling_Unit ;
+    rdfs:label "Air Handling Unit 1 (AHU1)" ;
+    brick:hasPart bldg:AHU1_Cooling_Valve,
+        bldg:AHU1_Preheat_Valve,
+        bldg:AHU1_Return_Air_Damper ;
+    brick:hasPoint bldg:AHU1_Discharge_Air_Temp,
+        bldg:AHU1_Mixed_Air_Temp,
+        bldg:AHU1_Outside_Airflow,
+        bldg:AHU1_Return_Air_Temp,
+        bldg:AHU1_Supply_Fan_Flow,
+        bldg:Weather_Outside_Temp .
+
+bldg:AHU2 a brick:Air_Handling_Unit ;
+    rdfs:label "Air Handling Unit 2 (AHU2)" ;
+    brick:hasPart bldg:AHU2_Cooling_Valve,
+        bldg:AHU2_Preheat_Valve,
+        bldg:AHU2_Return_Air_Damper ;
+    brick:hasPoint bldg:AHU2_Discharge_Air_Temp,
+        bldg:AHU2_Mixed_Air_Temp,
+        bldg:AHU2_Outside_Airflow,
+        bldg:AHU2_Return_Air_Temp,
+        bldg:AHU2_Supply_Fan_Flow,
+        bldg:Weather_Outside_Temp .
+
+bldg:Weather_Station a brick:Weather_Station ;
+    rdfs:label "Weather Station" ;
+    brick:hasPoint bldg:Weather_Outside_Temp .
+
+bldg:AHU1_Cooling_Valve a brick:Cooling_Valve ;
+    brick:hasPoint bldg:AHU1_Cooling_Valve_Output .
+
+bldg:AHU1_Cooling_Valve_Output a brick:Valve_Position_Command ;
+    ref:hasExternalReference "AHU1_Cooling_Valve_Output" .
+
+bldg:AHU1_Discharge_Air_Temp a brick:Supply_Air_Temperature_Sensor ;
+    ref:hasExternalReference "AHU1_Discharge_Air_Temp" .
+
+bldg:AHU1_Mixed_Air_Temp a brick:Mixed_Air_Temperature_Sensor ;
+    ref:hasExternalReference "AHU1_Mixed_Air_Temp" .
+
+bldg:AHU1_Outside_Airflow a brick:Outside_Air_Flow_Sensor ;
+    ref:hasExternalReference "AHU1_Outside_Airflow" .
+
+bldg:AHU1_Preheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:AHU1_Preheat_Valve_Output .
+
+bldg:AHU1_Preheat_Valve_Output a brick:Valve_Position_Command ;
+    ref:hasExternalReference "AHU1_Preheat_Valve_Output" .
+
+bldg:AHU1_Return_Air_Damper a brick:Return_Damper ;
+    brick:hasPoint bldg:AHU1_Return_Air_Damper_Output .
+
+bldg:AHU1_Return_Air_Damper_Output a brick:Damper_Position_Command ;
+    ref:hasExternalReference "AHU1_Return_Air_Damper_Output" .
+
+bldg:AHU1_Return_Air_Temp a brick:Return_Air_Temperature_Sensor ;
+    ref:hasExternalReference "AHU1_Return_Air_Temp" .
+
+bldg:AHU1_Supply_Fan_Flow a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "AHU1_Supply_Fan_Flow" .
+
+bldg:AHU2_Cooling_Valve a brick:Cooling_Valve ;
+    brick:hasPoint bldg:AHU2_Cooling_Valve_Output .
+
+bldg:AHU2_Cooling_Valve_Output a brick:Valve_Position_Command ;
+    ref:hasExternalReference "AHU2_Cooling_Valve_Output" .
+
+bldg:AHU2_Discharge_Air_Temp a brick:Supply_Air_Temperature_Sensor ;
+    ref:hasExternalReference "AHU2_Discharge_Air_Temp" .
+
+bldg:AHU2_Mixed_Air_Temp a brick:Mixed_Air_Temperature_Sensor ;
+    ref:hasExternalReference "AHU2_Mixed_Air_Temp" .
+
+bldg:AHU2_Outside_Airflow a brick:Outside_Air_Flow_Sensor ;
+    ref:hasExternalReference "AHU2_Outside_Airflow" .
+
+bldg:AHU2_Preheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:AHU2_Preheat_Valve_Output .
+
+bldg:AHU2_Preheat_Valve_Output a brick:Valve_Position_Command ;
+    ref:hasExternalReference "AHU2_Preheat_Valve_Output" .
+
+bldg:AHU2_Return_Air_Damper a brick:Return_Damper ;
+    brick:hasPoint bldg:AHU2_Return_Air_Damper_Output .
+
+bldg:AHU2_Return_Air_Damper_Output a brick:Damper_Position_Command ;
+    ref:hasExternalReference "AHU2_Return_Air_Damper_Output" .
+
+bldg:AHU2_Return_Air_Temp a brick:Return_Air_Temperature_Sensor ;
+    ref:hasExternalReference "AHU2_Return_Air_Temp" .
+
+bldg:AHU2_Supply_Fan_Flow a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "AHU2_Supply_Fan_Flow" .
+
+bldg:Weather_Outside_Temp a brick:Outside_Air_Temperature_Sensor ;
+    ref:hasExternalReference "Weather_Outside_Temp" .
+
