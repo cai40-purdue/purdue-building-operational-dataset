@@ -1,0 +1,2077 @@
+@prefix bldg: <urn:building1/> .
+@prefix brick: <https://brickschema.org/schema/Brick#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ref: <https://brickschema.org/schema/Brick/ref#> .
+
+bldg:AHU1 a brick:Air_Handling_Unit ;
+    rdfs:label "AC_P_5 (AHU1)" ;
+    brick:feeds bldg:VAV44,
+        bldg:VAV45 ;
+    brick:hasPoint bldg:AHU1_RA_Temp,
+        bldg:AHU1_RDuctStatic,
+        bldg:AHU1_SA_Temp,
+        bldg:AHU1_SDuctStatic,
+        bldg:AHU1_SupplyAFMS .
+
+bldg:AHU10 a brick:Air_Handling_Unit ;
+    rdfs:label "ThermalAHU_AC_P_2 (AHU10)" ;
+    brick:hasPoint bldg:AHU10_DischAirFlow,
+        bldg:AHU10_DischStatic,
+        bldg:AHU10_DischTemp,
+        bldg:AHU10_ReturnStatic,
+        bldg:AHU10_ReturnTemp .
+
+bldg:AHU2 a brick:Air_Handling_Unit ;
+    rdfs:label "AC_P_6 (AHU2)" ;
+    brick:feeds bldg:VAV46,
+        bldg:VAV47,
+        bldg:VAV48 ;
+    brick:hasPoint bldg:AHU2_RA_Temp,
+        bldg:AHU2_RDuctStatic,
+        bldg:AHU2_SA_Temp,
+        bldg:AHU2_SDuctStatic,
+        bldg:AHU2_SupplyAFMS .
+
+bldg:AHU3 a brick:Air_Handling_Unit ;
+    rdfs:label "AC_P_7 (AHU3)" ;
+    brick:feeds bldg:VAV49,
+        bldg:VAV50 ;
+    brick:hasPoint bldg:AHU3_RA_Temp,
+        bldg:AHU3_RDuctStatic,
+        bldg:AHU3_SA_Temp,
+        bldg:AHU3_SDuctStatic,
+        bldg:AHU3_SupplyAFMS .
+
+bldg:AHU4 a brick:Air_Handling_Unit ;
+    rdfs:label "AC_P_8 (AHU4)" ;
+    brick:feeds bldg:VAV51,
+        bldg:VAV52 ;
+    brick:hasPoint bldg:AHU4_RA_Temp,
+        bldg:AHU4_RDuctStatic,
+        bldg:AHU4_SA_Temp,
+        bldg:AHU4_SDuctStatic,
+        bldg:AHU4_SupplyAFMS .
+
+bldg:AHU5 a brick:Air_Handling_Unit ;
+    rdfs:label "HiBayAHU_AC_P_3 (AHU5)" ;
+    brick:hasPoint bldg:AHU5_DischStatic,
+        bldg:AHU5_DischTemp,
+        bldg:AHU5_RetAirTemp,
+        bldg:AHU5_ReturnStatic,
+        bldg:AHU5_SupplyCFM .
+
+bldg:AHU6 a brick:Air_Handling_Unit ;
+    rdfs:label "OfficeAHU_AC_P_1 (AHU6)" ;
+    brick:feeds bldg:VAV1,
+        bldg:VAV10,
+        bldg:VAV11,
+        bldg:VAV12,
+        bldg:VAV13,
+        bldg:VAV14,
+        bldg:VAV15,
+        bldg:VAV16,
+        bldg:VAV17,
+        bldg:VAV18,
+        bldg:VAV19,
+        bldg:VAV2,
+        bldg:VAV20,
+        bldg:VAV21,
+        bldg:VAV22,
+        bldg:VAV23,
+        bldg:VAV24,
+        bldg:VAV25,
+        bldg:VAV26,
+        bldg:VAV27,
+        bldg:VAV28,
+        bldg:VAV29,
+        bldg:VAV3,
+        bldg:VAV30,
+        bldg:VAV31,
+        bldg:VAV32,
+        bldg:VAV33,
+        bldg:VAV34,
+        bldg:VAV35,
+        bldg:VAV36,
+        bldg:VAV37,
+        bldg:VAV38,
+        bldg:VAV39,
+        bldg:VAV4,
+        bldg:VAV40,
+        bldg:VAV41,
+        bldg:VAV42,
+        bldg:VAV43,
+        bldg:VAV5,
+        bldg:VAV53,
+        bldg:VAV6,
+        bldg:VAV7,
+        bldg:VAV8,
+        bldg:VAV9 ;
+    brick:hasPoint bldg:AHU6_DischTemp,
+        bldg:AHU6_ReturnStatic,
+        bldg:AHU6_ReturnTemp,
+        bldg:AHU6_SupplyCFM,
+        bldg:AHU6_SupplyStatic .
+
+bldg:AHU7 a brick:Air_Handling_Unit ;
+    rdfs:label "PBE_AHU_AC_P_4 (AHU7)" ;
+    brick:hasPoint bldg:AHU7_DischAirFlow,
+        bldg:AHU7_DischStatic,
+        bldg:AHU7_DischTemp,
+        bldg:AHU7_ReturnAirTemp,
+        bldg:AHU7_ReturnStatic,
+        bldg:AHU7_Supply_CFM .
+
+bldg:AHU8 a brick:Air_Handling_Unit ;
+    rdfs:label "Siemens_Admin_AHU (AHU8)" ;
+    brick:hasPoint bldg:AHU8_DischTemp,
+        bldg:AHU8_ReturnHumidity,
+        bldg:AHU8_ReturnStatic,
+        bldg:AHU8_ReturnTemp,
+        bldg:AHU8_SupplyStatic .
+
+bldg:AHU9 a brick:Air_Handling_Unit ;
+    rdfs:label "Siemens_HighBay_AHU (AHU9)" ;
+    brick:hasPoint bldg:AHU9_DischTemp,
+        bldg:AHU9_SpaceHumidity,
+        bldg:AHU9_SpaceSetpt_1,
+        bldg:AHU9_SpaceSetpt_2,
+        bldg:AHU9_SpaceTemp1,
+        bldg:AHU9_SpaceTemp2,
+        bldg:AHU9_SpaceTempAvg,
+        bldg:AHU9_SpaceTempSetpt,
+        bldg:AHU9_SupplyCFM .
+
+bldg:AHU10_DischAirFlow a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "AHU10_DischAirFlow" .
+
+bldg:AHU10_DischStatic a brick:Supply_Air_Static_Pressure_Sensor ;
+    ref:hasExternalReference "AHU10_DischStatic" .
+
+bldg:AHU10_DischTemp a brick:Supply_Air_Temperature_Sensor ;
+    ref:hasExternalReference "AHU10_DischTemp" .
+
+bldg:AHU10_ReturnStatic a brick:Return_Air_Static_Pressure_Sensor ;
+    ref:hasExternalReference "AHU10_ReturnStatic" .
+
+bldg:AHU10_ReturnTemp a brick:Return_Air_Temperature_Sensor ;
+    ref:hasExternalReference "AHU10_ReturnTemp" .
+
+bldg:AHU1_RA_Temp a brick:Return_Air_Temperature_Sensor ;
+    ref:hasExternalReference "AHU1_RA_Temp" .
+
+bldg:AHU1_RDuctStatic a brick:Return_Air_Static_Pressure_Sensor ;
+    ref:hasExternalReference "AHU1_RDuctStatic" .
+
+bldg:AHU1_SA_Temp a brick:Supply_Air_Temperature_Sensor ;
+    ref:hasExternalReference "AHU1_SA_Temp" .
+
+bldg:AHU1_SDuctStatic a brick:Supply_Air_Static_Pressure_Sensor ;
+    ref:hasExternalReference "AHU1_SDuctStatic" .
+
+bldg:AHU1_SupplyAFMS a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "AHU1_SupplyAFMS" .
+
+bldg:AHU2_RA_Temp a brick:Return_Air_Temperature_Sensor ;
+    ref:hasExternalReference "AHU2_RA_Temp" .
+
+bldg:AHU2_RDuctStatic a brick:Return_Air_Static_Pressure_Sensor ;
+    ref:hasExternalReference "AHU2_RDuctStatic" .
+
+bldg:AHU2_SA_Temp a brick:Supply_Air_Temperature_Sensor ;
+    ref:hasExternalReference "AHU2_SA_Temp" .
+
+bldg:AHU2_SDuctStatic a brick:Supply_Air_Static_Pressure_Sensor ;
+    ref:hasExternalReference "AHU2_SDuctStatic" .
+
+bldg:AHU2_SupplyAFMS a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "AHU2_SupplyAFMS" .
+
+bldg:AHU3_RA_Temp a brick:Return_Air_Temperature_Sensor ;
+    ref:hasExternalReference "AHU3_RA_Temp" .
+
+bldg:AHU3_RDuctStatic a brick:Return_Air_Static_Pressure_Sensor ;
+    ref:hasExternalReference "AHU3_RDuctStatic" .
+
+bldg:AHU3_SA_Temp a brick:Supply_Air_Temperature_Sensor ;
+    ref:hasExternalReference "AHU3_SA_Temp" .
+
+bldg:AHU3_SDuctStatic a brick:Supply_Air_Static_Pressure_Sensor ;
+    ref:hasExternalReference "AHU3_SDuctStatic" .
+
+bldg:AHU3_SupplyAFMS a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "AHU3_SupplyAFMS" .
+
+bldg:AHU4_RA_Temp a brick:Return_Air_Temperature_Sensor ;
+    ref:hasExternalReference "AHU4_RA_Temp" .
+
+bldg:AHU4_RDuctStatic a brick:Return_Air_Static_Pressure_Sensor ;
+    ref:hasExternalReference "AHU4_RDuctStatic" .
+
+bldg:AHU4_SA_Temp a brick:Supply_Air_Temperature_Sensor ;
+    ref:hasExternalReference "AHU4_SA_Temp" .
+
+bldg:AHU4_SDuctStatic a brick:Supply_Air_Static_Pressure_Sensor ;
+    ref:hasExternalReference "AHU4_SDuctStatic" .
+
+bldg:AHU4_SupplyAFMS a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "AHU4_SupplyAFMS" .
+
+bldg:AHU5_DischStatic a brick:Supply_Air_Static_Pressure_Sensor ;
+    ref:hasExternalReference "AHU5_DischStatic" .
+
+bldg:AHU5_DischTemp a brick:Supply_Air_Temperature_Sensor ;
+    ref:hasExternalReference "AHU5_DischTemp" .
+
+bldg:AHU5_RetAirTemp a brick:Return_Air_Temperature_Sensor ;
+    ref:hasExternalReference "AHU5_RetAirTemp" .
+
+bldg:AHU5_ReturnStatic a brick:Return_Air_Static_Pressure_Sensor ;
+    ref:hasExternalReference "AHU5_ReturnStatic" .
+
+bldg:AHU5_SupplyCFM a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "AHU5_SupplyCFM" .
+
+bldg:AHU6_DischTemp a brick:Supply_Air_Temperature_Sensor ;
+    ref:hasExternalReference "AHU6_DischTemp" .
+
+bldg:AHU6_ReturnStatic a brick:Return_Air_Static_Pressure_Sensor ;
+    ref:hasExternalReference "AHU6_ReturnStatic" .
+
+bldg:AHU6_ReturnTemp a brick:Return_Air_Temperature_Sensor ;
+    ref:hasExternalReference "AHU6_ReturnTemp" .
+
+bldg:AHU6_SupplyCFM a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "AHU6_SupplyCFM" .
+
+bldg:AHU6_SupplyStatic a brick:Supply_Air_Static_Pressure_Sensor ;
+    ref:hasExternalReference "AHU6_SupplyStatic" .
+
+bldg:AHU7_DischAirFlow a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "AHU7_DischAirFlow" .
+
+bldg:AHU7_DischStatic a brick:Supply_Air_Static_Pressure_Sensor ;
+    ref:hasExternalReference "AHU7_DischStatic" .
+
+bldg:AHU7_DischTemp a brick:Supply_Air_Temperature_Sensor ;
+    ref:hasExternalReference "AHU7_DischTemp" .
+
+bldg:AHU7_ReturnAirTemp a brick:Return_Air_Temperature_Sensor ;
+    ref:hasExternalReference "AHU7_ReturnAirTemp" .
+
+bldg:AHU7_ReturnStatic a brick:Return_Air_Static_Pressure_Sensor ;
+    ref:hasExternalReference "AHU7_ReturnStatic" .
+
+bldg:AHU7_Supply_CFM a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "AHU7_Supply_CFM" .
+
+bldg:AHU8_DischTemp a brick:Supply_Air_Temperature_Sensor ;
+    ref:hasExternalReference "AHU8_DischTemp" .
+
+bldg:AHU8_ReturnHumidity a brick:Return_Air_Humidity_Sensor ;
+    ref:hasExternalReference "AHU8_ReturnHumidity" .
+
+bldg:AHU8_ReturnStatic a brick:Return_Air_Static_Pressure_Sensor ;
+    ref:hasExternalReference "AHU8_ReturnStatic" .
+
+bldg:AHU8_ReturnTemp a brick:Return_Air_Temperature_Sensor ;
+    ref:hasExternalReference "AHU8_ReturnTemp" .
+
+bldg:AHU8_SupplyStatic a brick:Supply_Air_Static_Pressure_Sensor ;
+    ref:hasExternalReference "AHU8_SupplyStatic" .
+
+bldg:AHU9_DischTemp a brick:Supply_Air_Temperature_Sensor ;
+    ref:hasExternalReference "AHU9_DischTemp" .
+
+bldg:AHU9_SpaceHumidity a brick:Zone_Air_Humidity_Sensor ;
+    ref:hasExternalReference "AHU9_SpaceHumidity" .
+
+bldg:AHU9_SpaceSetpt_1 a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "AHU9_SpaceSetpt_1" .
+
+bldg:AHU9_SpaceSetpt_2 a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "AHU9_SpaceSetpt_2" .
+
+bldg:AHU9_SpaceTemp1 a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "AHU9_SpaceTemp1" .
+
+bldg:AHU9_SpaceTemp2 a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "AHU9_SpaceTemp2" .
+
+bldg:AHU9_SpaceTempAvg a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "AHU9_SpaceTempAvg" .
+
+bldg:AHU9_SpaceTempSetpt a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "AHU9_SpaceTempSetpt" .
+
+bldg:AHU9_SupplyCFM a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "AHU9_SupplyCFM" .
+
+bldg:VAV1 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_1002 (VAV1)" ;
+    brick:hasPart bldg:VAV1_Damper,
+        bldg:VAV1_Reheat_Valve ;
+    brick:hasPoint bldg:VAV1_AIR_VOLUME,
+        bldg:VAV1_AUX_TEMP_AI3,
+        bldg:VAV1_RM_STPT_DIAL,
+        bldg:VAV1_ROOM_TEMP .
+
+bldg:VAV10 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_1015 (VAV10)" ;
+    brick:hasPart bldg:VAV10_Damper,
+        bldg:VAV10_Reheat_Valve ;
+    brick:hasPoint bldg:VAV10_AIR_VOLUME,
+        bldg:VAV10_AUX_TEMP_AI3,
+        bldg:VAV10_RM_STPT_DIAL,
+        bldg:VAV10_ROOM_TEMP .
+
+bldg:VAV10_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV10_AIR_VOLUME" .
+
+bldg:VAV10_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV10_AUX_TEMP_AI3" .
+
+bldg:VAV10_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV10_DMPR_POS" .
+
+bldg:VAV10_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV10_DMPR_POS .
+
+bldg:VAV10_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV10_RM_STPT_DIAL" .
+
+bldg:VAV10_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV10_ROOM_TEMP" .
+
+bldg:VAV10_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV10_VLV1_POS .
+
+bldg:VAV10_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV10_VLV1_POS" .
+
+bldg:VAV11 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_1016 (VAV11)" ;
+    brick:hasPart bldg:VAV11_Damper,
+        bldg:VAV11_Reheat_Valve ;
+    brick:hasPoint bldg:VAV11_AIR_VOLUME,
+        bldg:VAV11_AUX_TEMP_AI3,
+        bldg:VAV11_RM_STPT_DIAL,
+        bldg:VAV11_ROOM_TEMP .
+
+bldg:VAV11_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV11_AIR_VOLUME" .
+
+bldg:VAV11_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV11_AUX_TEMP_AI3" .
+
+bldg:VAV11_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV11_DMPR_POS" .
+
+bldg:VAV11_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV11_DMPR_POS .
+
+bldg:VAV11_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV11_RM_STPT_DIAL" .
+
+bldg:VAV11_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV11_ROOM_TEMP" .
+
+bldg:VAV11_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV11_VLV1_POS .
+
+bldg:VAV11_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV11_VLV1_POS" .
+
+bldg:VAV12 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_1017 (VAV12)" ;
+    brick:hasPart bldg:VAV12_Damper,
+        bldg:VAV12_Reheat_Valve ;
+    brick:hasPoint bldg:VAV12_AIR_VOLUME,
+        bldg:VAV12_AUX_TEMP_AI3,
+        bldg:VAV12_RM_STPT_DIAL,
+        bldg:VAV12_ROOM_TEMP .
+
+bldg:VAV12_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV12_AIR_VOLUME" .
+
+bldg:VAV12_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV12_AUX_TEMP_AI3" .
+
+bldg:VAV12_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV12_DMPR_POS" .
+
+bldg:VAV12_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV12_DMPR_POS .
+
+bldg:VAV12_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV12_RM_STPT_DIAL" .
+
+bldg:VAV12_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV12_ROOM_TEMP" .
+
+bldg:VAV12_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV12_VLV1_POS .
+
+bldg:VAV12_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV12_VLV1_POS" .
+
+bldg:VAV13 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_1024 (VAV13)" ;
+    brick:hasPart bldg:VAV13_Damper,
+        bldg:VAV13_Reheat_Valve ;
+    brick:hasPoint bldg:VAV13_AIR_VOLUME,
+        bldg:VAV13_AUX_TEMP_AI3,
+        bldg:VAV13_RM_STPT_DIAL,
+        bldg:VAV13_ROOM_TEMP .
+
+bldg:VAV13_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV13_AIR_VOLUME" .
+
+bldg:VAV13_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV13_AUX_TEMP_AI3" .
+
+bldg:VAV13_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV13_DMPR_POS" .
+
+bldg:VAV13_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV13_DMPR_POS .
+
+bldg:VAV13_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV13_RM_STPT_DIAL" .
+
+bldg:VAV13_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV13_ROOM_TEMP" .
+
+bldg:VAV13_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV13_VLV1_POS .
+
+bldg:VAV13_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV13_VLV1_POS" .
+
+bldg:VAV14 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_1025 (VAV14)" ;
+    brick:hasPart bldg:VAV14_Damper,
+        bldg:VAV14_Reheat_Valve ;
+    brick:hasPoint bldg:VAV14_AIR_VOLUME,
+        bldg:VAV14_AUX_TEMP_AI3,
+        bldg:VAV14_RM_STPT_DIAL,
+        bldg:VAV14_ROOM_TEMP .
+
+bldg:VAV14_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV14_AIR_VOLUME" .
+
+bldg:VAV14_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV14_AUX_TEMP_AI3" .
+
+bldg:VAV14_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV14_DMPR_POS" .
+
+bldg:VAV14_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV14_DMPR_POS .
+
+bldg:VAV14_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV14_RM_STPT_DIAL" .
+
+bldg:VAV14_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV14_ROOM_TEMP" .
+
+bldg:VAV14_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV14_VLV1_POS .
+
+bldg:VAV14_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV14_VLV1_POS" .
+
+bldg:VAV15 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_1026 (VAV15)" ;
+    brick:hasPart bldg:VAV15_Damper,
+        bldg:VAV15_Reheat_Valve ;
+    brick:hasPoint bldg:VAV15_AIR_VOLUME,
+        bldg:VAV15_AUX_TEMP_AI3,
+        bldg:VAV15_RM_STPT_DIAL,
+        bldg:VAV15_ROOM_TEMP .
+
+bldg:VAV15_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV15_AIR_VOLUME" .
+
+bldg:VAV15_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV15_AUX_TEMP_AI3" .
+
+bldg:VAV15_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV15_DMPR_POS" .
+
+bldg:VAV15_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV15_DMPR_POS .
+
+bldg:VAV15_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV15_RM_STPT_DIAL" .
+
+bldg:VAV15_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV15_ROOM_TEMP" .
+
+bldg:VAV15_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV15_VLV1_POS .
+
+bldg:VAV15_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV15_VLV1_POS" .
+
+bldg:VAV16 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_1027 (VAV16)" ;
+    brick:hasPart bldg:VAV16_Damper,
+        bldg:VAV16_Reheat_Valve ;
+    brick:hasPoint bldg:VAV16_AIR_VOLUME,
+        bldg:VAV16_AUX_TEMP_AI3,
+        bldg:VAV16_RM_STPT_DIAL,
+        bldg:VAV16_ROOM_TEMP .
+
+bldg:VAV16_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV16_AIR_VOLUME" .
+
+bldg:VAV16_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV16_AUX_TEMP_AI3" .
+
+bldg:VAV16_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV16_DMPR_POS" .
+
+bldg:VAV16_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV16_DMPR_POS .
+
+bldg:VAV16_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV16_RM_STPT_DIAL" .
+
+bldg:VAV16_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV16_ROOM_TEMP" .
+
+bldg:VAV16_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV16_VLV1_POS .
+
+bldg:VAV16_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV16_VLV1_POS" .
+
+bldg:VAV17 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_1028 (VAV17)" ;
+    brick:hasPart bldg:VAV17_Damper,
+        bldg:VAV17_Reheat_Valve ;
+    brick:hasPoint bldg:VAV17_AIR_VOLUME,
+        bldg:VAV17_AUX_TEMP_AI3,
+        bldg:VAV17_RM_STPT_DIAL,
+        bldg:VAV17_ROOM_TEMP .
+
+bldg:VAV17_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV17_AIR_VOLUME" .
+
+bldg:VAV17_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV17_AUX_TEMP_AI3" .
+
+bldg:VAV17_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV17_DMPR_POS" .
+
+bldg:VAV17_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV17_DMPR_POS .
+
+bldg:VAV17_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV17_RM_STPT_DIAL" .
+
+bldg:VAV17_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV17_ROOM_TEMP" .
+
+bldg:VAV17_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV17_VLV1_POS .
+
+bldg:VAV17_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV17_VLV1_POS" .
+
+bldg:VAV18 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_1034 (VAV18)" ;
+    brick:hasPart bldg:VAV18_Damper,
+        bldg:VAV18_Reheat_Valve ;
+    brick:hasPoint bldg:VAV18_AIR_VOLUME,
+        bldg:VAV18_AUX_TEMP_AI3,
+        bldg:VAV18_RM_STPT_DIAL,
+        bldg:VAV18_ROOM_TEMP .
+
+bldg:VAV18_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV18_AIR_VOLUME" .
+
+bldg:VAV18_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV18_AUX_TEMP_AI3" .
+
+bldg:VAV18_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV18_DMPR_POS" .
+
+bldg:VAV18_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV18_DMPR_POS .
+
+bldg:VAV18_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV18_RM_STPT_DIAL" .
+
+bldg:VAV18_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV18_ROOM_TEMP" .
+
+bldg:VAV18_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV18_VLV1_POS .
+
+bldg:VAV18_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV18_VLV1_POS" .
+
+bldg:VAV19 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_1042 (VAV19)" ;
+    brick:hasPart bldg:VAV19_Damper,
+        bldg:VAV19_Reheat_Valve ;
+    brick:hasPoint bldg:VAV19_AIR_VOLUME,
+        bldg:VAV19_AUX_TEMP_AI3,
+        bldg:VAV19_RM_STPT_DIAL,
+        bldg:VAV19_ROOM_TEMP .
+
+bldg:VAV19_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV19_AIR_VOLUME" .
+
+bldg:VAV19_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV19_AUX_TEMP_AI3" .
+
+bldg:VAV19_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV19_DMPR_POS" .
+
+bldg:VAV19_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV19_DMPR_POS .
+
+bldg:VAV19_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV19_RM_STPT_DIAL" .
+
+bldg:VAV19_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV19_ROOM_TEMP" .
+
+bldg:VAV19_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV19_VLV1_POS .
+
+bldg:VAV19_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV19_VLV1_POS" .
+
+bldg:VAV1_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV1_AIR_VOLUME" .
+
+bldg:VAV1_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV1_AUX_TEMP_AI3" .
+
+bldg:VAV1_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV1_DMPR_POS" .
+
+bldg:VAV1_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV1_DMPR_POS .
+
+bldg:VAV1_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV1_RM_STPT_DIAL" .
+
+bldg:VAV1_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV1_ROOM_TEMP" .
+
+bldg:VAV1_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV1_VLV1_POS .
+
+bldg:VAV1_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV1_VLV1_POS" .
+
+bldg:VAV2 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_1003 (VAV2)" ;
+    brick:hasPart bldg:VAV2_Damper,
+        bldg:VAV2_Reheat_Valve ;
+    brick:hasPoint bldg:VAV2_AIR_VOLUME,
+        bldg:VAV2_AUX_TEMP_AI3,
+        bldg:VAV2_RM_STPT_DIAL,
+        bldg:VAV2_ROOM_TEMP .
+
+bldg:VAV20 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_1061 (VAV20)" ;
+    brick:hasPart bldg:VAV20_Damper,
+        bldg:VAV20_Reheat_Valve ;
+    brick:hasPoint bldg:VAV20_AIR_VOLUME,
+        bldg:VAV20_AUX_TEMP_AI3,
+        bldg:VAV20_RM_STPT_DIAL,
+        bldg:VAV20_ROOM_TEMP .
+
+bldg:VAV20_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV20_AIR_VOLUME" .
+
+bldg:VAV20_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV20_AUX_TEMP_AI3" .
+
+bldg:VAV20_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV20_DMPR_POS" .
+
+bldg:VAV20_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV20_DMPR_POS .
+
+bldg:VAV20_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV20_RM_STPT_DIAL" .
+
+bldg:VAV20_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV20_ROOM_TEMP" .
+
+bldg:VAV20_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV20_VLV1_POS .
+
+bldg:VAV20_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV20_VLV1_POS" .
+
+bldg:VAV21 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_2002 (VAV21)" ;
+    brick:hasPart bldg:VAV21_Damper,
+        bldg:VAV21_Reheat_Valve ;
+    brick:hasPoint bldg:VAV21_AIR_VOLUME,
+        bldg:VAV21_AUX_TEMP_AI3,
+        bldg:VAV21_RM_STPT_DIAL,
+        bldg:VAV21_ROOM_TEMP .
+
+bldg:VAV21_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV21_AIR_VOLUME" .
+
+bldg:VAV21_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV21_AUX_TEMP_AI3" .
+
+bldg:VAV21_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV21_DMPR_POS" .
+
+bldg:VAV21_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV21_DMPR_POS .
+
+bldg:VAV21_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV21_RM_STPT_DIAL" .
+
+bldg:VAV21_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV21_ROOM_TEMP" .
+
+bldg:VAV21_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV21_VLV1_POS .
+
+bldg:VAV21_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV21_VLV1_POS" .
+
+bldg:VAV22 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_2003 (VAV22)" ;
+    brick:hasPart bldg:VAV22_Damper,
+        bldg:VAV22_Reheat_Valve ;
+    brick:hasPoint bldg:VAV22_AIR_VOLUME,
+        bldg:VAV22_AUX_TEMP_AI3,
+        bldg:VAV22_RM_STPT_DIAL,
+        bldg:VAV22_ROOM_TEMP .
+
+bldg:VAV22_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV22_AIR_VOLUME" .
+
+bldg:VAV22_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV22_AUX_TEMP_AI3" .
+
+bldg:VAV22_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV22_DMPR_POS" .
+
+bldg:VAV22_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV22_DMPR_POS .
+
+bldg:VAV22_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV22_RM_STPT_DIAL" .
+
+bldg:VAV22_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV22_ROOM_TEMP" .
+
+bldg:VAV22_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV22_VLV1_POS .
+
+bldg:VAV22_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV22_VLV1_POS" .
+
+bldg:VAV23 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_2004 (VAV23)" ;
+    brick:hasPart bldg:VAV23_Damper,
+        bldg:VAV23_Reheat_Valve ;
+    brick:hasPoint bldg:VAV23_AIR_VOLUME,
+        bldg:VAV23_AUX_TEMP_AI3,
+        bldg:VAV23_RM_STPT_DIAL,
+        bldg:VAV23_ROOM_TEMP .
+
+bldg:VAV23_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV23_AIR_VOLUME" .
+
+bldg:VAV23_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV23_AUX_TEMP_AI3" .
+
+bldg:VAV23_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV23_DMPR_POS" .
+
+bldg:VAV23_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV23_DMPR_POS .
+
+bldg:VAV23_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV23_RM_STPT_DIAL" .
+
+bldg:VAV23_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV23_ROOM_TEMP" .
+
+bldg:VAV23_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV23_VLV1_POS .
+
+bldg:VAV23_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV23_VLV1_POS" .
+
+bldg:VAV24 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_2005 (VAV24)" ;
+    brick:hasPart bldg:VAV24_Damper,
+        bldg:VAV24_Reheat_Valve ;
+    brick:hasPoint bldg:VAV24_AIR_VOLUME,
+        bldg:VAV24_AUX_TEMP_AI3,
+        bldg:VAV24_RM_STPT_DIAL,
+        bldg:VAV24_ROOM_TEMP .
+
+bldg:VAV24_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV24_AIR_VOLUME" .
+
+bldg:VAV24_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV24_AUX_TEMP_AI3" .
+
+bldg:VAV24_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV24_DMPR_POS" .
+
+bldg:VAV24_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV24_DMPR_POS .
+
+bldg:VAV24_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV24_RM_STPT_DIAL" .
+
+bldg:VAV24_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV24_ROOM_TEMP" .
+
+bldg:VAV24_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV24_VLV1_POS .
+
+bldg:VAV24_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV24_VLV1_POS" .
+
+bldg:VAV25 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_2006 (VAV25)" ;
+    brick:hasPart bldg:VAV25_Damper,
+        bldg:VAV25_Reheat_Valve ;
+    brick:hasPoint bldg:VAV25_AIR_VOLUME,
+        bldg:VAV25_AUX_TEMP_AI3,
+        bldg:VAV25_RM_STPT_DIAL,
+        bldg:VAV25_ROOM_TEMP .
+
+bldg:VAV25_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV25_AIR_VOLUME" .
+
+bldg:VAV25_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV25_AUX_TEMP_AI3" .
+
+bldg:VAV25_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV25_DMPR_POS" .
+
+bldg:VAV25_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV25_DMPR_POS .
+
+bldg:VAV25_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV25_RM_STPT_DIAL" .
+
+bldg:VAV25_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV25_ROOM_TEMP" .
+
+bldg:VAV25_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV25_VLV1_POS .
+
+bldg:VAV25_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV25_VLV1_POS" .
+
+bldg:VAV26 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_2007 (VAV26)" ;
+    brick:hasPart bldg:VAV26_Damper,
+        bldg:VAV26_Reheat_Valve ;
+    brick:hasPoint bldg:VAV26_AIR_VOLUME,
+        bldg:VAV26_AUX_TEMP_AI3,
+        bldg:VAV26_RM_STPT_DIAL,
+        bldg:VAV26_ROOM_TEMP .
+
+bldg:VAV26_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV26_AIR_VOLUME" .
+
+bldg:VAV26_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV26_AUX_TEMP_AI3" .
+
+bldg:VAV26_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV26_DMPR_POS" .
+
+bldg:VAV26_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV26_DMPR_POS .
+
+bldg:VAV26_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV26_RM_STPT_DIAL" .
+
+bldg:VAV26_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV26_ROOM_TEMP" .
+
+bldg:VAV26_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV26_VLV1_POS .
+
+bldg:VAV26_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV26_VLV1_POS" .
+
+bldg:VAV27 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_2008 (VAV27)" ;
+    brick:hasPart bldg:VAV27_Damper,
+        bldg:VAV27_Reheat_Valve ;
+    brick:hasPoint bldg:VAV27_AIR_VOLUME,
+        bldg:VAV27_AUX_TEMP_AI3,
+        bldg:VAV27_RM_STPT_DIAL,
+        bldg:VAV27_ROOM_TEMP .
+
+bldg:VAV27_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV27_AIR_VOLUME" .
+
+bldg:VAV27_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV27_AUX_TEMP_AI3" .
+
+bldg:VAV27_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV27_DMPR_POS" .
+
+bldg:VAV27_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV27_DMPR_POS .
+
+bldg:VAV27_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV27_RM_STPT_DIAL" .
+
+bldg:VAV27_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV27_ROOM_TEMP" .
+
+bldg:VAV27_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV27_VLV1_POS .
+
+bldg:VAV27_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV27_VLV1_POS" .
+
+bldg:VAV28 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_2012 (VAV28)" ;
+    brick:hasPart bldg:VAV28_Damper,
+        bldg:VAV28_Reheat_Valve ;
+    brick:hasPoint bldg:VAV28_AIR_VOLUME,
+        bldg:VAV28_AUX_TEMP_AI3,
+        bldg:VAV28_RM_STPT_DIAL,
+        bldg:VAV28_ROOM_TEMP .
+
+bldg:VAV28_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV28_AIR_VOLUME" .
+
+bldg:VAV28_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV28_AUX_TEMP_AI3" .
+
+bldg:VAV28_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV28_DMPR_POS" .
+
+bldg:VAV28_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV28_DMPR_POS .
+
+bldg:VAV28_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV28_RM_STPT_DIAL" .
+
+bldg:VAV28_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV28_ROOM_TEMP" .
+
+bldg:VAV28_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV28_VLV1_POS .
+
+bldg:VAV28_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV28_VLV1_POS" .
+
+bldg:VAV29 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_2014 (VAV29)" ;
+    brick:hasPart bldg:VAV29_Damper,
+        bldg:VAV29_Reheat_Valve ;
+    brick:hasPoint bldg:VAV29_AIR_VOLUME,
+        bldg:VAV29_AUX_TEMP_AI3,
+        bldg:VAV29_RM_STPT_DIAL,
+        bldg:VAV29_ROOM_TEMP .
+
+bldg:VAV29_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV29_AIR_VOLUME" .
+
+bldg:VAV29_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV29_AUX_TEMP_AI3" .
+
+bldg:VAV29_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV29_DMPR_POS" .
+
+bldg:VAV29_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV29_DMPR_POS .
+
+bldg:VAV29_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV29_RM_STPT_DIAL" .
+
+bldg:VAV29_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV29_ROOM_TEMP" .
+
+bldg:VAV29_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV29_VLV1_POS .
+
+bldg:VAV29_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV29_VLV1_POS" .
+
+bldg:VAV2_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV2_AIR_VOLUME" .
+
+bldg:VAV2_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV2_AUX_TEMP_AI3" .
+
+bldg:VAV2_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV2_DMPR_POS" .
+
+bldg:VAV2_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV2_DMPR_POS .
+
+bldg:VAV2_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV2_RM_STPT_DIAL" .
+
+bldg:VAV2_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV2_ROOM_TEMP" .
+
+bldg:VAV2_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV2_VLV1_POS .
+
+bldg:VAV2_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV2_VLV1_POS" .
+
+bldg:VAV3 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_1004 (VAV3)" ;
+    brick:hasPart bldg:VAV3_Damper,
+        bldg:VAV3_Reheat_Valve ;
+    brick:hasPoint bldg:VAV3_AIR_VOLUME,
+        bldg:VAV3_AUX_TEMP_AI3,
+        bldg:VAV3_RM_STPT_DIAL,
+        bldg:VAV3_ROOM_TEMP .
+
+bldg:VAV30 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_2016 (VAV30)" ;
+    brick:hasPart bldg:VAV30_Damper,
+        bldg:VAV30_Reheat_Valve ;
+    brick:hasPoint bldg:VAV30_AIR_VOLUME,
+        bldg:VAV30_AUX_TEMP_AI3,
+        bldg:VAV30_RM_STPT_DIAL,
+        bldg:VAV30_ROOM_TEMP .
+
+bldg:VAV30_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV30_AIR_VOLUME" .
+
+bldg:VAV30_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV30_AUX_TEMP_AI3" .
+
+bldg:VAV30_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV30_DMPR_POS" .
+
+bldg:VAV30_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV30_DMPR_POS .
+
+bldg:VAV30_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV30_RM_STPT_DIAL" .
+
+bldg:VAV30_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV30_ROOM_TEMP" .
+
+bldg:VAV30_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV30_VLV1_POS .
+
+bldg:VAV30_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV30_VLV1_POS" .
+
+bldg:VAV31 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_2018 (VAV31)" ;
+    brick:hasPart bldg:VAV31_Damper,
+        bldg:VAV31_Reheat_Valve ;
+    brick:hasPoint bldg:VAV31_AIR_VOLUME,
+        bldg:VAV31_AUX_TEMP_AI3,
+        bldg:VAV31_RM_STPT_DIAL,
+        bldg:VAV31_ROOM_TEMP .
+
+bldg:VAV31_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV31_AIR_VOLUME" .
+
+bldg:VAV31_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV31_AUX_TEMP_AI3" .
+
+bldg:VAV31_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV31_DMPR_POS" .
+
+bldg:VAV31_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV31_DMPR_POS .
+
+bldg:VAV31_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV31_RM_STPT_DIAL" .
+
+bldg:VAV31_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV31_ROOM_TEMP" .
+
+bldg:VAV31_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV31_VLV1_POS .
+
+bldg:VAV31_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV31_VLV1_POS" .
+
+bldg:VAV32 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_2021 (VAV32)" ;
+    brick:hasPart bldg:VAV32_Damper,
+        bldg:VAV32_Reheat_Valve ;
+    brick:hasPoint bldg:VAV32_AIR_VOLUME,
+        bldg:VAV32_AUX_TEMP_AI3,
+        bldg:VAV32_RM_STPT_DIAL,
+        bldg:VAV32_ROOM_TEMP .
+
+bldg:VAV32_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV32_AIR_VOLUME" .
+
+bldg:VAV32_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV32_AUX_TEMP_AI3" .
+
+bldg:VAV32_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV32_DMPR_POS" .
+
+bldg:VAV32_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV32_DMPR_POS .
+
+bldg:VAV32_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV32_RM_STPT_DIAL" .
+
+bldg:VAV32_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV32_ROOM_TEMP" .
+
+bldg:VAV32_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV32_VLV1_POS .
+
+bldg:VAV32_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV32_VLV1_POS" .
+
+bldg:VAV33 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_2022 (VAV33)" ;
+    brick:hasPart bldg:VAV33_Damper,
+        bldg:VAV33_Reheat_Valve ;
+    brick:hasPoint bldg:VAV33_AIR_VOLUME,
+        bldg:VAV33_AUX_TEMP_AI3,
+        bldg:VAV33_RM_STPT_DIAL,
+        bldg:VAV33_ROOM_TEMP .
+
+bldg:VAV33_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV33_AIR_VOLUME" .
+
+bldg:VAV33_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV33_AUX_TEMP_AI3" .
+
+bldg:VAV33_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV33_DMPR_POS" .
+
+bldg:VAV33_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV33_DMPR_POS .
+
+bldg:VAV33_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV33_RM_STPT_DIAL" .
+
+bldg:VAV33_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV33_ROOM_TEMP" .
+
+bldg:VAV33_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV33_VLV1_POS .
+
+bldg:VAV33_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV33_VLV1_POS" .
+
+bldg:VAV34 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_2023 (VAV34)" ;
+    brick:hasPart bldg:VAV34_Damper,
+        bldg:VAV34_Reheat_Valve ;
+    brick:hasPoint bldg:VAV34_AIR_VOLUME,
+        bldg:VAV34_AUX_TEMP_AI3,
+        bldg:VAV34_RM_STPT_DIAL,
+        bldg:VAV34_ROOM_TEMP .
+
+bldg:VAV34_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV34_AIR_VOLUME" .
+
+bldg:VAV34_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV34_AUX_TEMP_AI3" .
+
+bldg:VAV34_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV34_DMPR_POS" .
+
+bldg:VAV34_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV34_DMPR_POS .
+
+bldg:VAV34_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV34_RM_STPT_DIAL" .
+
+bldg:VAV34_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV34_ROOM_TEMP" .
+
+bldg:VAV34_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV34_VLV1_POS .
+
+bldg:VAV34_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV34_VLV1_POS" .
+
+bldg:VAV35 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_2024 (VAV35)" ;
+    brick:hasPart bldg:VAV35_Damper,
+        bldg:VAV35_Reheat_Valve ;
+    brick:hasPoint bldg:VAV35_AIR_VOLUME,
+        bldg:VAV35_AUX_TEMP_AI3,
+        bldg:VAV35_RM_STPT_DIAL,
+        bldg:VAV35_ROOM_TEMP .
+
+bldg:VAV35_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV35_AIR_VOLUME" .
+
+bldg:VAV35_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV35_AUX_TEMP_AI3" .
+
+bldg:VAV35_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV35_DMPR_POS" .
+
+bldg:VAV35_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV35_DMPR_POS .
+
+bldg:VAV35_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV35_RM_STPT_DIAL" .
+
+bldg:VAV35_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV35_ROOM_TEMP" .
+
+bldg:VAV35_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV35_VLV1_POS .
+
+bldg:VAV35_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV35_VLV1_POS" .
+
+bldg:VAV36 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_2025 (VAV36)" ;
+    brick:hasPart bldg:VAV36_Damper,
+        bldg:VAV36_Reheat_Valve ;
+    brick:hasPoint bldg:VAV36_AIR_VOLUME,
+        bldg:VAV36_AUX_TEMP_AI3,
+        bldg:VAV36_RM_STPT_DIAL,
+        bldg:VAV36_ROOM_TEMP .
+
+bldg:VAV36_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV36_AIR_VOLUME" .
+
+bldg:VAV36_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV36_AUX_TEMP_AI3" .
+
+bldg:VAV36_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV36_DMPR_POS" .
+
+bldg:VAV36_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV36_DMPR_POS .
+
+bldg:VAV36_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV36_RM_STPT_DIAL" .
+
+bldg:VAV36_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV36_ROOM_TEMP" .
+
+bldg:VAV36_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV36_VLV1_POS .
+
+bldg:VAV36_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV36_VLV1_POS" .
+
+bldg:VAV37 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_2030 (VAV37)" ;
+    brick:hasPart bldg:VAV37_Damper,
+        bldg:VAV37_Reheat_Valve ;
+    brick:hasPoint bldg:VAV37_AIR_VOLUME,
+        bldg:VAV37_AUX_TEMP_AI3,
+        bldg:VAV37_RM_STPT_DIAL,
+        bldg:VAV37_ROOM_TEMP .
+
+bldg:VAV37_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV37_AIR_VOLUME" .
+
+bldg:VAV37_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV37_AUX_TEMP_AI3" .
+
+bldg:VAV37_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV37_DMPR_POS" .
+
+bldg:VAV37_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV37_DMPR_POS .
+
+bldg:VAV37_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV37_RM_STPT_DIAL" .
+
+bldg:VAV37_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV37_ROOM_TEMP" .
+
+bldg:VAV37_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV37_VLV1_POS .
+
+bldg:VAV37_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV37_VLV1_POS" .
+
+bldg:VAV38 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_2032 (VAV38)" ;
+    brick:hasPart bldg:VAV38_Damper,
+        bldg:VAV38_Reheat_Valve ;
+    brick:hasPoint bldg:VAV38_AIR_VOLUME,
+        bldg:VAV38_AUX_TEMP_AI3,
+        bldg:VAV38_RM_STPT_DIAL,
+        bldg:VAV38_ROOM_TEMP .
+
+bldg:VAV38_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV38_AIR_VOLUME" .
+
+bldg:VAV38_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV38_AUX_TEMP_AI3" .
+
+bldg:VAV38_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV38_DMPR_POS" .
+
+bldg:VAV38_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV38_DMPR_POS .
+
+bldg:VAV38_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV38_RM_STPT_DIAL" .
+
+bldg:VAV38_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV38_ROOM_TEMP" .
+
+bldg:VAV38_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV38_VLV1_POS .
+
+bldg:VAV38_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV38_VLV1_POS" .
+
+bldg:VAV39 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_2034 (VAV39)" ;
+    brick:hasPart bldg:VAV39_Damper,
+        bldg:VAV39_Reheat_Valve ;
+    brick:hasPoint bldg:VAV39_AIR_VOLUME,
+        bldg:VAV39_AUX_TEMP_AI3,
+        bldg:VAV39_RM_STPT_DIAL,
+        bldg:VAV39_ROOM_TEMP .
+
+bldg:VAV39_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV39_AIR_VOLUME" .
+
+bldg:VAV39_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV39_AUX_TEMP_AI3" .
+
+bldg:VAV39_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV39_DMPR_POS" .
+
+bldg:VAV39_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV39_DMPR_POS .
+
+bldg:VAV39_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV39_RM_STPT_DIAL" .
+
+bldg:VAV39_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV39_ROOM_TEMP" .
+
+bldg:VAV39_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV39_VLV1_POS .
+
+bldg:VAV39_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV39_VLV1_POS" .
+
+bldg:VAV3_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV3_AIR_VOLUME" .
+
+bldg:VAV3_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV3_AUX_TEMP_AI3" .
+
+bldg:VAV3_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV3_DMPR_POS" .
+
+bldg:VAV3_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV3_DMPR_POS .
+
+bldg:VAV3_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV3_RM_STPT_DIAL" .
+
+bldg:VAV3_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV3_ROOM_TEMP" .
+
+bldg:VAV3_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV3_VLV1_POS .
+
+bldg:VAV3_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV3_VLV1_POS" .
+
+bldg:VAV4 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_1005 (VAV4)" ;
+    brick:hasPart bldg:VAV4_Damper,
+        bldg:VAV4_Reheat_Valve ;
+    brick:hasPoint bldg:VAV4_AIR_VOLUME,
+        bldg:VAV4_AUX_TEMP_AI3,
+        bldg:VAV4_RM_STPT_DIAL,
+        bldg:VAV4_ROOM_TEMP .
+
+bldg:VAV40 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_2040 (VAV40)" ;
+    brick:hasPart bldg:VAV40_Damper,
+        bldg:VAV40_Reheat_Valve ;
+    brick:hasPoint bldg:VAV40_AIR_VOLUME,
+        bldg:VAV40_AUX_TEMP_AI3,
+        bldg:VAV40_RM_STPT_DIAL,
+        bldg:VAV40_ROOM_TEMP .
+
+bldg:VAV40_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV40_AIR_VOLUME" .
+
+bldg:VAV40_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV40_AUX_TEMP_AI3" .
+
+bldg:VAV40_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV40_DMPR_POS" .
+
+bldg:VAV40_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV40_DMPR_POS .
+
+bldg:VAV40_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV40_RM_STPT_DIAL" .
+
+bldg:VAV40_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV40_ROOM_TEMP" .
+
+bldg:VAV40_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV40_VLV1_POS .
+
+bldg:VAV40_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV40_VLV1_POS" .
+
+bldg:VAV41 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_2061 (VAV41)" ;
+    brick:hasPart bldg:VAV41_Damper,
+        bldg:VAV41_Reheat_Valve ;
+    brick:hasPoint bldg:VAV41_AIR_VOLUME,
+        bldg:VAV41_AUX_TEMP_AI3,
+        bldg:VAV41_RM_STPT_DIAL,
+        bldg:VAV41_ROOM_TEMP .
+
+bldg:VAV41_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV41_AIR_VOLUME" .
+
+bldg:VAV41_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV41_AUX_TEMP_AI3" .
+
+bldg:VAV41_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV41_DMPR_POS" .
+
+bldg:VAV41_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV41_DMPR_POS .
+
+bldg:VAV41_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV41_RM_STPT_DIAL" .
+
+bldg:VAV41_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV41_ROOM_TEMP" .
+
+bldg:VAV41_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV41_VLV1_POS .
+
+bldg:VAV41_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV41_VLV1_POS" .
+
+bldg:VAV42 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_2065 (VAV42)" ;
+    brick:hasPart bldg:VAV42_Damper,
+        bldg:VAV42_Reheat_Valve ;
+    brick:hasPoint bldg:VAV42_AIR_VOLUME,
+        bldg:VAV42_AUX_TEMP_AI3,
+        bldg:VAV42_RM_STPT_DIAL,
+        bldg:VAV42_ROOM_TEMP .
+
+bldg:VAV42_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV42_AIR_VOLUME" .
+
+bldg:VAV42_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV42_AUX_TEMP_AI3" .
+
+bldg:VAV42_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV42_DMPR_POS" .
+
+bldg:VAV42_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV42_DMPR_POS .
+
+bldg:VAV42_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV42_RM_STPT_DIAL" .
+
+bldg:VAV42_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV42_ROOM_TEMP" .
+
+bldg:VAV42_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV42_VLV1_POS .
+
+bldg:VAV42_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV42_VLV1_POS" .
+
+bldg:VAV43 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_2067 (VAV43)" ;
+    brick:hasPart bldg:VAV43_Damper,
+        bldg:VAV43_Reheat_Valve ;
+    brick:hasPoint bldg:VAV43_AIR_VOLUME,
+        bldg:VAV43_AUX_TEMP_AI3,
+        bldg:VAV43_RM_STPT_DIAL,
+        bldg:VAV43_ROOM_TEMP .
+
+bldg:VAV43_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV43_AIR_VOLUME" .
+
+bldg:VAV43_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV43_AUX_TEMP_AI3" .
+
+bldg:VAV43_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV43_DMPR_POS" .
+
+bldg:VAV43_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV43_DMPR_POS .
+
+bldg:VAV43_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV43_RM_STPT_DIAL" .
+
+bldg:VAV43_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV43_ROOM_TEMP" .
+
+bldg:VAV43_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV43_VLV1_POS .
+
+bldg:VAV43_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV43_VLV1_POS" .
+
+bldg:VAV44 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_3055D (VAV44)" ;
+    brick:hasPart bldg:VAV44_Damper,
+        bldg:VAV44_Reheat_Valve ;
+    brick:hasPoint bldg:VAV44_AIR_VOLUME,
+        bldg:VAV44_AUX_TEMP_AI3,
+        bldg:VAV44_CTL_TEMP,
+        bldg:VAV44_RM_STPT_DIAL,
+        bldg:VAV44_ROOM_TEMP .
+
+bldg:VAV44_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV44_AIR_VOLUME" .
+
+bldg:VAV44_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV44_AUX_TEMP_AI3" .
+
+bldg:VAV44_CTL_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV44_CTL_TEMP" .
+
+bldg:VAV44_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV44_DMPR_POS" .
+
+bldg:VAV44_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV44_DMPR_POS .
+
+bldg:VAV44_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV44_RM_STPT_DIAL" .
+
+bldg:VAV44_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV44_ROOM_TEMP" .
+
+bldg:VAV44_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV44_VLV1_POS .
+
+bldg:VAV44_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV44_VLV1_POS" .
+
+bldg:VAV45 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_3055E (VAV45)" ;
+    brick:hasPart bldg:VAV45_Damper,
+        bldg:VAV45_Reheat_Valve ;
+    brick:hasPoint bldg:VAV45_AIR_VOLUME,
+        bldg:VAV45_AUX_TEMP_AI3,
+        bldg:VAV45_CTL_TEMP,
+        bldg:VAV45_RM_STPT_DIAL,
+        bldg:VAV45_ROOM_TEMP .
+
+bldg:VAV45_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV45_AIR_VOLUME" .
+
+bldg:VAV45_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV45_AUX_TEMP_AI3" .
+
+bldg:VAV45_CTL_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV45_CTL_TEMP" .
+
+bldg:VAV45_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV45_DMPR_POS" .
+
+bldg:VAV45_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV45_DMPR_POS .
+
+bldg:VAV45_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV45_RM_STPT_DIAL" .
+
+bldg:VAV45_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV45_ROOM_TEMP" .
+
+bldg:VAV45_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV45_VLV1_POS .
+
+bldg:VAV45_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV45_VLV1_POS" .
+
+bldg:VAV46 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_3057A (VAV46)" ;
+    brick:hasPart bldg:VAV46_Damper,
+        bldg:VAV46_Reheat_Valve ;
+    brick:hasPoint bldg:VAV46_AIR_VOLUME,
+        bldg:VAV46_AUX_TEMP_AI3,
+        bldg:VAV46_CTL_TEMP,
+        bldg:VAV46_RM_STPT_DIAL,
+        bldg:VAV46_ROOM_TEMP .
+
+bldg:VAV46_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV46_AIR_VOLUME" .
+
+bldg:VAV46_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV46_AUX_TEMP_AI3" .
+
+bldg:VAV46_CTL_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV46_CTL_TEMP" .
+
+bldg:VAV46_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV46_DMPR_POS" .
+
+bldg:VAV46_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV46_DMPR_POS .
+
+bldg:VAV46_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV46_RM_STPT_DIAL" .
+
+bldg:VAV46_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV46_ROOM_TEMP" .
+
+bldg:VAV46_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV46_VLV1_POS .
+
+bldg:VAV46_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV46_VLV1_POS" .
+
+bldg:VAV47 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_3057B (VAV47)" ;
+    brick:hasPart bldg:VAV47_Damper,
+        bldg:VAV47_Reheat_Valve ;
+    brick:hasPoint bldg:VAV47_AIR_VOLUME,
+        bldg:VAV47_AUX_TEMP_AI3,
+        bldg:VAV47_CTL_TEMP,
+        bldg:VAV47_RM_STPT_DIAL,
+        bldg:VAV47_ROOM_TEMP .
+
+bldg:VAV47_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV47_AIR_VOLUME" .
+
+bldg:VAV47_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV47_AUX_TEMP_AI3" .
+
+bldg:VAV47_CTL_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV47_CTL_TEMP" .
+
+bldg:VAV47_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV47_DMPR_POS" .
+
+bldg:VAV47_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV47_DMPR_POS .
+
+bldg:VAV47_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV47_RM_STPT_DIAL" .
+
+bldg:VAV47_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV47_ROOM_TEMP" .
+
+bldg:VAV47_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV47_VLV1_POS .
+
+bldg:VAV47_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV47_VLV1_POS" .
+
+bldg:VAV48 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_3057C (VAV48)" ;
+    brick:hasPart bldg:VAV48_Damper,
+        bldg:VAV48_Reheat_Valve ;
+    brick:hasPoint bldg:VAV48_AIR_VOLUME,
+        bldg:VAV48_AUX_TEMP_AI3,
+        bldg:VAV48_CTL_TEMP,
+        bldg:VAV48_RM_STPT_DIAL,
+        bldg:VAV48_ROOM_TEMP .
+
+bldg:VAV48_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV48_AIR_VOLUME" .
+
+bldg:VAV48_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV48_AUX_TEMP_AI3" .
+
+bldg:VAV48_CTL_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV48_CTL_TEMP" .
+
+bldg:VAV48_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV48_DMPR_POS" .
+
+bldg:VAV48_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV48_DMPR_POS .
+
+bldg:VAV48_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV48_RM_STPT_DIAL" .
+
+bldg:VAV48_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV48_ROOM_TEMP" .
+
+bldg:VAV48_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV48_VLV1_POS .
+
+bldg:VAV48_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV48_VLV1_POS" .
+
+bldg:VAV49 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_3071A (VAV49)" ;
+    brick:hasPart bldg:VAV49_Damper,
+        bldg:VAV49_Reheat_Valve ;
+    brick:hasPoint bldg:VAV49_AIR_VOLUME,
+        bldg:VAV49_AUX_TEMP_AI3,
+        bldg:VAV49_LL_SpcSetpt,
+        bldg:VAV49_ROOM_TEMP .
+
+bldg:VAV49_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV49_AIR_VOLUME" .
+
+bldg:VAV49_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV49_AUX_TEMP_AI3" .
+
+bldg:VAV49_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV49_DMPR_POS" .
+
+bldg:VAV49_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV49_DMPR_POS .
+
+bldg:VAV49_LL_SpcSetpt a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV49_LL_SpcSetpt" .
+
+bldg:VAV49_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV49_ROOM_TEMP" .
+
+bldg:VAV49_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV49_VLV1_POS .
+
+bldg:VAV49_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV49_VLV1_POS" .
+
+bldg:VAV4_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV4_AIR_VOLUME" .
+
+bldg:VAV4_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV4_AUX_TEMP_AI3" .
+
+bldg:VAV4_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV4_DMPR_POS" .
+
+bldg:VAV4_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV4_DMPR_POS .
+
+bldg:VAV4_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV4_RM_STPT_DIAL" .
+
+bldg:VAV4_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV4_ROOM_TEMP" .
+
+bldg:VAV4_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV4_VLV1_POS .
+
+bldg:VAV4_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV4_VLV1_POS" .
+
+bldg:VAV5 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_1006 (VAV5)" ;
+    brick:hasPart bldg:VAV5_Damper,
+        bldg:VAV5_Reheat_Valve ;
+    brick:hasPoint bldg:VAV5_AIR_VOLUME,
+        bldg:VAV5_AUX_TEMP_AI3,
+        bldg:VAV5_RM_STPT_DIAL,
+        bldg:VAV5_ROOM_TEMP .
+
+bldg:VAV50 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_3071B (VAV50)" ;
+    brick:hasPart bldg:VAV50_Damper,
+        bldg:VAV50_Reheat_Valve ;
+    brick:hasPoint bldg:VAV50_AIR_VOLUME,
+        bldg:VAV50_AUX_TEMP_AI3,
+        bldg:VAV50_LL_SpcSetpt,
+        bldg:VAV50_ROOM_TEMP .
+
+bldg:VAV50_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV50_AIR_VOLUME" .
+
+bldg:VAV50_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV50_AUX_TEMP_AI3" .
+
+bldg:VAV50_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV50_DMPR_POS" .
+
+bldg:VAV50_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV50_DMPR_POS .
+
+bldg:VAV50_LL_SpcSetpt a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV50_LL_SpcSetpt" .
+
+bldg:VAV50_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV50_ROOM_TEMP" .
+
+bldg:VAV50_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV50_VLV1_POS .
+
+bldg:VAV50_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV50_VLV1_POS" .
+
+bldg:VAV51 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_3073A (VAV51)" ;
+    brick:hasPart bldg:VAV51_Damper,
+        bldg:VAV51_Reheat_Valve ;
+    brick:hasPoint bldg:VAV51_AIR_VOLUME,
+        bldg:VAV51_AUX_TEMP_AI3,
+        bldg:VAV51_LL_SpcSetpt,
+        bldg:VAV51_ROOM_TEMP .
+
+bldg:VAV51_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV51_AIR_VOLUME" .
+
+bldg:VAV51_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV51_AUX_TEMP_AI3" .
+
+bldg:VAV51_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV51_DMPR_POS" .
+
+bldg:VAV51_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV51_DMPR_POS .
+
+bldg:VAV51_LL_SpcSetpt a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV51_LL_SpcSetpt" .
+
+bldg:VAV51_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV51_ROOM_TEMP" .
+
+bldg:VAV51_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV51_VLV1_POS .
+
+bldg:VAV51_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV51_VLV1_POS" .
+
+bldg:VAV52 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_3073B (VAV52)" ;
+    brick:hasPart bldg:VAV52_Damper,
+        bldg:VAV52_Reheat_Valve ;
+    brick:hasPoint bldg:VAV52_AIR_VOLUME,
+        bldg:VAV52_AUX_TEMP_AI3,
+        bldg:VAV52_LL_SpcTemp,
+        bldg:VAV52_ROOM_TEMP .
+
+bldg:VAV52_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV52_AIR_VOLUME" .
+
+bldg:VAV52_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV52_AUX_TEMP_AI3" .
+
+bldg:VAV52_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV52_DMPR_POS" .
+
+bldg:VAV52_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV52_DMPR_POS .
+
+bldg:VAV52_LL_SpcTemp a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV52_LL_SpcTemp" .
+
+bldg:VAV52_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV52_ROOM_TEMP" .
+
+bldg:VAV52_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV52_VLV1_POS .
+
+bldg:VAV52_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV52_VLV1_POS" .
+
+bldg:VAV53 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_3H01 (VAV53)" ;
+    brick:hasPart bldg:VAV53_Damper,
+        bldg:VAV53_Reheat_Valve ;
+    brick:hasPoint bldg:VAV53_AIR_VOLUME,
+        bldg:VAV53_AUX_TEMP_AI3,
+        bldg:VAV53_RM_STPT_DIAL,
+        bldg:VAV53_ROOM_TEMP .
+
+bldg:VAV53_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV53_AIR_VOLUME" .
+
+bldg:VAV53_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV53_AUX_TEMP_AI3" .
+
+bldg:VAV53_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV53_DMPR_POS" .
+
+bldg:VAV53_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV53_DMPR_POS .
+
+bldg:VAV53_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV53_RM_STPT_DIAL" .
+
+bldg:VAV53_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV53_ROOM_TEMP" .
+
+bldg:VAV53_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV53_VLV1_POS .
+
+bldg:VAV53_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV53_VLV1_POS" .
+
+bldg:VAV5_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV5_AIR_VOLUME" .
+
+bldg:VAV5_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV5_AUX_TEMP_AI3" .
+
+bldg:VAV5_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV5_DMPR_POS" .
+
+bldg:VAV5_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV5_DMPR_POS .
+
+bldg:VAV5_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV5_RM_STPT_DIAL" .
+
+bldg:VAV5_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV5_ROOM_TEMP" .
+
+bldg:VAV5_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV5_VLV1_POS .
+
+bldg:VAV5_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV5_VLV1_POS" .
+
+bldg:VAV6 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_1007 (VAV6)" ;
+    brick:hasPart bldg:VAV6_Damper,
+        bldg:VAV6_Reheat_Valve ;
+    brick:hasPoint bldg:VAV6_AIR_VOLUME,
+        bldg:VAV6_AUX_TEMP_AI3,
+        bldg:VAV6_RM_STPT_DIAL,
+        bldg:VAV6_ROOM_TEMP .
+
+bldg:VAV6_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV6_AIR_VOLUME" .
+
+bldg:VAV6_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV6_AUX_TEMP_AI3" .
+
+bldg:VAV6_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV6_DMPR_POS" .
+
+bldg:VAV6_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV6_DMPR_POS .
+
+bldg:VAV6_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV6_RM_STPT_DIAL" .
+
+bldg:VAV6_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV6_ROOM_TEMP" .
+
+bldg:VAV6_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV6_VLV1_POS .
+
+bldg:VAV6_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV6_VLV1_POS" .
+
+bldg:VAV7 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_1008 (VAV7)" ;
+    brick:hasPart bldg:VAV7_Damper,
+        bldg:VAV7_Reheat_Valve ;
+    brick:hasPoint bldg:VAV7_AIR_VOLUME,
+        bldg:VAV7_AUX_TEMP_AI3,
+        bldg:VAV7_RM_STPT_DIAL,
+        bldg:VAV7_ROOM_TEMP .
+
+bldg:VAV7_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV7_AIR_VOLUME" .
+
+bldg:VAV7_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV7_AUX_TEMP_AI3" .
+
+bldg:VAV7_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV7_DMPR_POS" .
+
+bldg:VAV7_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV7_DMPR_POS .
+
+bldg:VAV7_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV7_RM_STPT_DIAL" .
+
+bldg:VAV7_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV7_ROOM_TEMP" .
+
+bldg:VAV7_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV7_VLV1_POS .
+
+bldg:VAV7_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV7_VLV1_POS" .
+
+bldg:VAV8 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_1012 (VAV8)" ;
+    brick:hasPart bldg:VAV8_Damper,
+        bldg:VAV8_Reheat_Valve ;
+    brick:hasPoint bldg:VAV8_AIR_VOLUME,
+        bldg:VAV8_AUX_TEMP_AI3,
+        bldg:VAV8_RM_STPT_DIAL,
+        bldg:VAV8_ROOM_TEMP .
+
+bldg:VAV8_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV8_AIR_VOLUME" .
+
+bldg:VAV8_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV8_AUX_TEMP_AI3" .
+
+bldg:VAV8_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV8_DMPR_POS" .
+
+bldg:VAV8_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV8_DMPR_POS .
+
+bldg:VAV8_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV8_RM_STPT_DIAL" .
+
+bldg:VAV8_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV8_ROOM_TEMP" .
+
+bldg:VAV8_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV8_VLV1_POS .
+
+bldg:VAV8_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV8_VLV1_POS" .
+
+bldg:VAV9 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "VAV_1014 (VAV9)" ;
+    brick:hasPart bldg:VAV9_Damper,
+        bldg:VAV9_Reheat_Valve ;
+    brick:hasPoint bldg:VAV9_AIR_VOLUME,
+        bldg:VAV9_AUX_TEMP_AI3,
+        bldg:VAV9_RM_STPT_DIAL,
+        bldg:VAV9_ROOM_TEMP .
+
+bldg:VAV9_AIR_VOLUME a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV9_AIR_VOLUME" .
+
+bldg:VAV9_AUX_TEMP_AI3 a brick:Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV9_AUX_TEMP_AI3" .
+
+bldg:VAV9_DMPR_POS a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV9_DMPR_POS" .
+
+bldg:VAV9_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV9_DMPR_POS .
+
+bldg:VAV9_RM_STPT_DIAL a brick:Zone_Air_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV9_RM_STPT_DIAL" .
+
+bldg:VAV9_ROOM_TEMP a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV9_ROOM_TEMP" .
+
+bldg:VAV9_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV9_VLV1_POS .
+
+bldg:VAV9_VLV1_POS a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV9_VLV1_POS" .
+
