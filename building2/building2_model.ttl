@@ -1,0 +1,965 @@
+@prefix bldg: <urn:building2/> .
+@prefix brick: <https://brickschema.org/schema/Brick#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ref: <https://brickschema.org/schema/Brick/ref#> .
+
+bldg:AHU1 a brick:Air_Handling_Unit ;
+    rdfs:label "Air Handling Unit 1 (AHU1)" ;
+    brick:feeds bldg:VAV1_01,
+        bldg:VAV1_02,
+        bldg:VAV1_03,
+        bldg:VAV1_04,
+        bldg:VAV1_05,
+        bldg:VAV1_06,
+        bldg:VAV1_07,
+        bldg:VAV1_08,
+        bldg:VAV1_09,
+        bldg:VAV1_10 ;
+    brick:hasPoint bldg:AHU1_Cooling_Coil_Pump_Command,
+        bldg:AHU1_Cooling_Coil_Pump_Status,
+        bldg:AHU1_Cooling_Valve_Output,
+        bldg:AHU1_Discharge_Air_Temp,
+        bldg:AHU1_Exhaust_Air_Damper_Output,
+        bldg:AHU1_Filter_Alarm,
+        bldg:AHU1_Heating_Coil_Pump_Command,
+        bldg:AHU1_Heating_Coil_Pump_Status,
+        bldg:AHU1_High_Static_Pressure_Alarm,
+        bldg:AHU1_Humidifier_Alarm,
+        bldg:AHU1_Humidifier_Enable,
+        bldg:AHU1_Humidifier_Output,
+        bldg:AHU1_Low_Temp_Alarm,
+        bldg:AHU1_Mixed_Air_Humidity,
+        bldg:AHU1_Mixed_Air_Temp,
+        bldg:AHU1_Outside_Air_Damper_End_Switch,
+        bldg:AHU1_Outside_Air_Damper_Output,
+        bldg:AHU1_Outside_Airflow,
+        bldg:AHU1_Preheat_Coil_Temp,
+        bldg:AHU1_Preheat_Valve_Output,
+        bldg:AHU1_Return_Air_Damper_Output,
+        bldg:AHU1_Return_Air_Humidity,
+        bldg:AHU1_Return_Air_Temp,
+        bldg:AHU1_Return_Fan_Command,
+        bldg:AHU1_Return_Fan_Flow,
+        bldg:AHU1_Return_Fan_Speed_Output,
+        bldg:AHU1_Return_Fan_Status,
+        bldg:AHU1_Smoke_Detector_Alarm,
+        bldg:AHU1_Supply_Air_Pressure,
+        bldg:AHU1_Supply_Fan_Command,
+        bldg:AHU1_Supply_Fan_Flow,
+        bldg:AHU1_Supply_Fan_Speed_Output,
+        bldg:AHU1_Supply_Fan_Status .
+
+bldg:AHU2 a brick:Air_Handling_Unit ;
+    rdfs:label "Air Handling Unit 2 (AHU2)" ;
+    brick:feeds bldg:VAV2_01,
+        bldg:VAV2_02,
+        bldg:VAV2_03,
+        bldg:VAV2_04,
+        bldg:VAV2_05 ;
+    brick:hasPoint bldg:AHU2_Cooling_Coil_Pump_Command,
+        bldg:AHU2_Cooling_Coil_Pump_Status,
+        bldg:AHU2_Cooling_Valve_Output,
+        bldg:AHU2_Discharge_Air_Temp,
+        bldg:AHU2_Exhaust_Air_Damper_Output,
+        bldg:AHU2_Filter_Alarm,
+        bldg:AHU2_Heating_Coil_Pump_Command,
+        bldg:AHU2_Heating_Coil_Pump_Status,
+        bldg:AHU2_High_Static_Pressure_Alarm,
+        bldg:AHU2_Humidifier_Alarm,
+        bldg:AHU2_Humidifier_Enable,
+        bldg:AHU2_Humidifier_Output,
+        bldg:AHU2_Low_Temp_Alarm,
+        bldg:AHU2_Mixed_Air_Humidity,
+        bldg:AHU2_Mixed_Air_Temp,
+        bldg:AHU2_Outside_Air_Damper_End_Switch,
+        bldg:AHU2_Outside_Air_Damper_Output,
+        bldg:AHU2_Outside_Airflow,
+        bldg:AHU2_Preheat_Coil_Temp,
+        bldg:AHU2_Preheat_Valve_Output,
+        bldg:AHU2_Return_Air_Damper_Output,
+        bldg:AHU2_Return_Air_Humidity,
+        bldg:AHU2_Return_Air_Temp,
+        bldg:AHU2_Return_Fan_Command,
+        bldg:AHU2_Return_Fan_Flow,
+        bldg:AHU2_Return_Fan_Speed_Output,
+        bldg:AHU2_Return_Fan_Status,
+        bldg:AHU2_Smoke_Detector_Alarm,
+        bldg:AHU2_Supply_Air_Pressure,
+        bldg:AHU2_Supply_Fan_Command,
+        bldg:AHU2_Supply_Fan_Flow,
+        bldg:AHU2_Supply_Fan_Speed_Output,
+        bldg:AHU2_Supply_Fan_Status .
+
+bldg:AHU1_Cooling_Coil_Pump_Command a brick:Sensor ;
+    ref:hasExternalReference "AHU1_Cooling_Coil_Pump_Command" .
+
+bldg:AHU1_Cooling_Coil_Pump_Status a brick:Sensor ;
+    ref:hasExternalReference "AHU1_Cooling_Coil_Pump_Status" .
+
+bldg:AHU1_Cooling_Valve_Output a brick:Cooling_Valve_Command ;
+    ref:hasExternalReference "AHU1_Cooling_Valve_Output" .
+
+bldg:AHU1_Discharge_Air_Temp a brick:Supply_Air_Temperature_Sensor ;
+    ref:hasExternalReference "AHU1_Discharge_Air_Temp" .
+
+bldg:AHU1_Exhaust_Air_Damper_Output a brick:Exhaust_Air_Damper_Command ;
+    ref:hasExternalReference "AHU1_Exhaust_Air_Damper_Output" .
+
+bldg:AHU1_Filter_Alarm a brick:Sensor ;
+    ref:hasExternalReference "AHU1_Filter_Alarm" .
+
+bldg:AHU1_Heating_Coil_Pump_Command a brick:Sensor ;
+    ref:hasExternalReference "AHU1_Heating_Coil_Pump_Command" .
+
+bldg:AHU1_Heating_Coil_Pump_Status a brick:Sensor ;
+    ref:hasExternalReference "AHU1_Heating_Coil_Pump_Status" .
+
+bldg:AHU1_High_Static_Pressure_Alarm a brick:Sensor ;
+    ref:hasExternalReference "AHU1_High_Static_Pressure_Alarm" .
+
+bldg:AHU1_Humidifier_Alarm a brick:Sensor ;
+    ref:hasExternalReference "AHU1_Humidifier_Alarm" .
+
+bldg:AHU1_Humidifier_Enable a brick:Sensor ;
+    ref:hasExternalReference "AHU1_Humidifier_Enable" .
+
+bldg:AHU1_Humidifier_Output a brick:Humidifier_Command ;
+    ref:hasExternalReference "AHU1_Humidifier_Output" .
+
+bldg:AHU1_Low_Temp_Alarm a brick:Sensor ;
+    ref:hasExternalReference "AHU1_Low_Temp_Alarm" .
+
+bldg:AHU1_Mixed_Air_Humidity a brick:Mixed_Air_Humidity_Sensor ;
+    ref:hasExternalReference "AHU1_Mixed_Air_Humidity" .
+
+bldg:AHU1_Mixed_Air_Temp a brick:Mixed_Air_Temperature_Sensor ;
+    ref:hasExternalReference "AHU1_Mixed_Air_Temp" .
+
+bldg:AHU1_Outside_Air_Damper_End_Switch a brick:Sensor ;
+    ref:hasExternalReference "AHU1_Outside_Air_Damper_End_Switch" .
+
+bldg:AHU1_Outside_Air_Damper_Output a brick:Outside_Air_Damper_Command ;
+    ref:hasExternalReference "AHU1_Outside_Air_Damper_Output" .
+
+bldg:AHU1_Outside_Airflow a brick:Outside_Air_Flow_Sensor ;
+    ref:hasExternalReference "AHU1_Outside_Airflow" .
+
+bldg:AHU1_Preheat_Coil_Temp a brick:Preheat_Coil_Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "AHU1_Preheat_Coil_Temp" .
+
+bldg:AHU1_Preheat_Valve_Output a brick:Preheat_Valve_Command ;
+    ref:hasExternalReference "AHU1_Preheat_Valve_Output" .
+
+bldg:AHU1_Return_Air_Damper_Output a brick:Return_Air_Damper_Command ;
+    ref:hasExternalReference "AHU1_Return_Air_Damper_Output" .
+
+bldg:AHU1_Return_Air_Humidity a brick:Return_Air_Humidity_Sensor ;
+    ref:hasExternalReference "AHU1_Return_Air_Humidity" .
+
+bldg:AHU1_Return_Air_Temp a brick:Return_Air_Temperature_Sensor ;
+    ref:hasExternalReference "AHU1_Return_Air_Temp" .
+
+bldg:AHU1_Return_Fan_Command a brick:Sensor ;
+    ref:hasExternalReference "AHU1_Return_Fan_Command" .
+
+bldg:AHU1_Return_Fan_Flow a brick:Return_Air_Flow_Sensor ;
+    ref:hasExternalReference "AHU1_Return_Fan_Flow" .
+
+bldg:AHU1_Return_Fan_Speed_Output a brick:Return_Fan_Speed_Command ;
+    ref:hasExternalReference "AHU1_Return_Fan_Speed_Output" .
+
+bldg:AHU1_Return_Fan_Status a brick:Sensor ;
+    ref:hasExternalReference "AHU1_Return_Fan_Status" .
+
+bldg:AHU1_Smoke_Detector_Alarm a brick:Sensor ;
+    ref:hasExternalReference "AHU1_Smoke_Detector_Alarm" .
+
+bldg:AHU1_Supply_Air_Pressure a brick:Supply_Air_Static_Pressure_Sensor ;
+    ref:hasExternalReference "AHU1_Supply_Air_Pressure" .
+
+bldg:AHU1_Supply_Fan_Command a brick:Sensor ;
+    ref:hasExternalReference "AHU1_Supply_Fan_Command" .
+
+bldg:AHU1_Supply_Fan_Flow a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "AHU1_Supply_Fan_Flow" .
+
+bldg:AHU1_Supply_Fan_Speed_Output a brick:Supply_Fan_Speed_Command ;
+    ref:hasExternalReference "AHU1_Supply_Fan_Speed_Output" .
+
+bldg:AHU1_Supply_Fan_Status a brick:Sensor ;
+    ref:hasExternalReference "AHU1_Supply_Fan_Status" .
+
+bldg:AHU2_Cooling_Coil_Pump_Command a brick:Sensor ;
+    ref:hasExternalReference "AHU2_Cooling_Coil_Pump_Command" .
+
+bldg:AHU2_Cooling_Coil_Pump_Status a brick:Sensor ;
+    ref:hasExternalReference "AHU2_Cooling_Coil_Pump_Status" .
+
+bldg:AHU2_Cooling_Valve_Output a brick:Cooling_Valve_Command ;
+    ref:hasExternalReference "AHU2_Cooling_Valve_Output" .
+
+bldg:AHU2_Discharge_Air_Temp a brick:Supply_Air_Temperature_Sensor ;
+    ref:hasExternalReference "AHU2_Discharge_Air_Temp" .
+
+bldg:AHU2_Exhaust_Air_Damper_Output a brick:Exhaust_Air_Damper_Command ;
+    ref:hasExternalReference "AHU2_Exhaust_Air_Damper_Output" .
+
+bldg:AHU2_Filter_Alarm a brick:Sensor ;
+    ref:hasExternalReference "AHU2_Filter_Alarm" .
+
+bldg:AHU2_Heating_Coil_Pump_Command a brick:Sensor ;
+    ref:hasExternalReference "AHU2_Heating_Coil_Pump_Command" .
+
+bldg:AHU2_Heating_Coil_Pump_Status a brick:Sensor ;
+    ref:hasExternalReference "AHU2_Heating_Coil_Pump_Status" .
+
+bldg:AHU2_High_Static_Pressure_Alarm a brick:Sensor ;
+    ref:hasExternalReference "AHU2_High_Static_Pressure_Alarm" .
+
+bldg:AHU2_Humidifier_Alarm a brick:Sensor ;
+    ref:hasExternalReference "AHU2_Humidifier_Alarm" .
+
+bldg:AHU2_Humidifier_Enable a brick:Sensor ;
+    ref:hasExternalReference "AHU2_Humidifier_Enable" .
+
+bldg:AHU2_Humidifier_Output a brick:Humidifier_Command ;
+    ref:hasExternalReference "AHU2_Humidifier_Output" .
+
+bldg:AHU2_Low_Temp_Alarm a brick:Sensor ;
+    ref:hasExternalReference "AHU2_Low_Temp_Alarm" .
+
+bldg:AHU2_Mixed_Air_Humidity a brick:Mixed_Air_Humidity_Sensor ;
+    ref:hasExternalReference "AHU2_Mixed_Air_Humidity" .
+
+bldg:AHU2_Mixed_Air_Temp a brick:Mixed_Air_Temperature_Sensor ;
+    ref:hasExternalReference "AHU2_Mixed_Air_Temp" .
+
+bldg:AHU2_Outside_Air_Damper_End_Switch a brick:Sensor ;
+    ref:hasExternalReference "AHU2_Outside_Air_Damper_End_Switch" .
+
+bldg:AHU2_Outside_Air_Damper_Output a brick:Outside_Air_Damper_Command ;
+    ref:hasExternalReference "AHU2_Outside_Air_Damper_Output" .
+
+bldg:AHU2_Outside_Airflow a brick:Outside_Air_Flow_Sensor ;
+    ref:hasExternalReference "AHU2_Outside_Airflow" .
+
+bldg:AHU2_Preheat_Coil_Temp a brick:Preheat_Coil_Discharge_Air_Temperature_Sensor ;
+    ref:hasExternalReference "AHU2_Preheat_Coil_Temp" .
+
+bldg:AHU2_Preheat_Valve_Output a brick:Preheat_Valve_Command ;
+    ref:hasExternalReference "AHU2_Preheat_Valve_Output" .
+
+bldg:AHU2_Return_Air_Damper_Output a brick:Return_Air_Damper_Command ;
+    ref:hasExternalReference "AHU2_Return_Air_Damper_Output" .
+
+bldg:AHU2_Return_Air_Humidity a brick:Return_Air_Humidity_Sensor ;
+    ref:hasExternalReference "AHU2_Return_Air_Humidity" .
+
+bldg:AHU2_Return_Air_Temp a brick:Return_Air_Temperature_Sensor ;
+    ref:hasExternalReference "AHU2_Return_Air_Temp" .
+
+bldg:AHU2_Return_Fan_Command a brick:Sensor ;
+    ref:hasExternalReference "AHU2_Return_Fan_Command" .
+
+bldg:AHU2_Return_Fan_Flow a brick:Return_Air_Flow_Sensor ;
+    ref:hasExternalReference "AHU2_Return_Fan_Flow" .
+
+bldg:AHU2_Return_Fan_Speed_Output a brick:Return_Fan_Speed_Command ;
+    ref:hasExternalReference "AHU2_Return_Fan_Speed_Output" .
+
+bldg:AHU2_Return_Fan_Status a brick:Sensor ;
+    ref:hasExternalReference "AHU2_Return_Fan_Status" .
+
+bldg:AHU2_Smoke_Detector_Alarm a brick:Sensor ;
+    ref:hasExternalReference "AHU2_Smoke_Detector_Alarm" .
+
+bldg:AHU2_Supply_Air_Pressure a brick:Supply_Air_Static_Pressure_Sensor ;
+    ref:hasExternalReference "AHU2_Supply_Air_Pressure" .
+
+bldg:AHU2_Supply_Fan_Command a brick:Sensor ;
+    ref:hasExternalReference "AHU2_Supply_Fan_Command" .
+
+bldg:AHU2_Supply_Fan_Flow a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "AHU2_Supply_Fan_Flow" .
+
+bldg:AHU2_Supply_Fan_Speed_Output a brick:Supply_Fan_Speed_Command ;
+    ref:hasExternalReference "AHU2_Supply_Fan_Speed_Output" .
+
+bldg:AHU2_Supply_Fan_Status a brick:Sensor ;
+    ref:hasExternalReference "AHU2_Supply_Fan_Status" .
+
+bldg:VAV1_01 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "Collab Lounge VAV1_01 (VAV1_01)" ;
+    brick:hasPart bldg:VAV1_01_Damper,
+        bldg:VAV1_01_Reheat_Valve ;
+    brick:hasPoint bldg:VAV1_01_Cooling_Setpoint,
+        bldg:VAV1_01_Desired_Airflow,
+        bldg:VAV1_01_Discharge_Air_Temp,
+        bldg:VAV1_01_Discharge_Airflow,
+        bldg:VAV1_01_Heating_Setpoint,
+        bldg:VAV1_01_Zone_Temp .
+
+bldg:VAV1_01_Cooling_Setpoint a brick:Zone_Air_Cooling_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV1_01_Cooling_Setpoint" .
+
+bldg:VAV1_01_Cooling_Signal a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV1_01_Cooling_Signal" .
+
+bldg:VAV1_01_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV1_01_Cooling_Signal .
+
+bldg:VAV1_01_Desired_Airflow a brick:Supply_Air_Flow_Setpoint ;
+    ref:hasExternalReference "VAV1_01_Desired_Airflow" .
+
+bldg:VAV1_01_Discharge_Air_Temp a brick:Supply_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV1_01_Discharge_Air_Temp" .
+
+bldg:VAV1_01_Discharge_Airflow a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV1_01_Discharge_Airflow" .
+
+bldg:VAV1_01_Heating_Setpoint a brick:Zone_Air_Heating_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV1_01_Heating_Setpoint" .
+
+bldg:VAV1_01_Heating_Signal a brick:Heating_Command ;
+    ref:hasExternalReference "VAV1_01_Heating_Signal" .
+
+bldg:VAV1_01_Reheat_Output a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV1_01_Reheat_Output" .
+
+bldg:VAV1_01_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV1_01_Heating_Signal,
+        bldg:VAV1_01_Reheat_Output .
+
+bldg:VAV1_01_Zone_Temp a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV1_01_Zone_Temp" .
+
+bldg:VAV1_02 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "Breakroom VAV1_02 (VAV1_02)" ;
+    brick:hasPart bldg:VAV1_02_Damper,
+        bldg:VAV1_02_Reheat_Valve ;
+    brick:hasPoint bldg:VAV1_02_Cooling_Setpoint,
+        bldg:VAV1_02_Desired_Airflow,
+        bldg:VAV1_02_Discharge_Air_Temp,
+        bldg:VAV1_02_Discharge_Airflow,
+        bldg:VAV1_02_Heating_Setpoint,
+        bldg:VAV1_02_Zone_Temp .
+
+bldg:VAV1_02_Cooling_Setpoint a brick:Zone_Air_Cooling_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV1_02_Cooling_Setpoint" .
+
+bldg:VAV1_02_Cooling_Signal a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV1_02_Cooling_Signal" .
+
+bldg:VAV1_02_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV1_02_Cooling_Signal .
+
+bldg:VAV1_02_Desired_Airflow a brick:Supply_Air_Flow_Setpoint ;
+    ref:hasExternalReference "VAV1_02_Desired_Airflow" .
+
+bldg:VAV1_02_Discharge_Air_Temp a brick:Supply_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV1_02_Discharge_Air_Temp" .
+
+bldg:VAV1_02_Discharge_Airflow a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV1_02_Discharge_Airflow" .
+
+bldg:VAV1_02_Heating_Setpoint a brick:Zone_Air_Heating_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV1_02_Heating_Setpoint" .
+
+bldg:VAV1_02_Heating_Signal a brick:Heating_Command ;
+    ref:hasExternalReference "VAV1_02_Heating_Signal" .
+
+bldg:VAV1_02_Reheat_Output a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV1_02_Reheat_Output" .
+
+bldg:VAV1_02_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV1_02_Heating_Signal,
+        bldg:VAV1_02_Reheat_Output .
+
+bldg:VAV1_02_Zone_Temp a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV1_02_Zone_Temp" .
+
+bldg:VAV1_03 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "Office 106 107 VAV1_03 (VAV1_03)" ;
+    brick:hasPart bldg:VAV1_03_Damper,
+        bldg:VAV1_03_Reheat_Valve ;
+    brick:hasPoint bldg:VAV1_03_Cooling_Setpoint,
+        bldg:VAV1_03_Desired_Airflow,
+        bldg:VAV1_03_Discharge_Air_Temp,
+        bldg:VAV1_03_Discharge_Airflow,
+        bldg:VAV1_03_Heating_Setpoint,
+        bldg:VAV1_03_Zone_Temp .
+
+bldg:VAV1_03_Cooling_Setpoint a brick:Zone_Air_Cooling_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV1_03_Cooling_Setpoint" .
+
+bldg:VAV1_03_Cooling_Signal a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV1_03_Cooling_Signal" .
+
+bldg:VAV1_03_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV1_03_Cooling_Signal .
+
+bldg:VAV1_03_Desired_Airflow a brick:Supply_Air_Flow_Setpoint ;
+    ref:hasExternalReference "VAV1_03_Desired_Airflow" .
+
+bldg:VAV1_03_Discharge_Air_Temp a brick:Supply_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV1_03_Discharge_Air_Temp" .
+
+bldg:VAV1_03_Discharge_Airflow a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV1_03_Discharge_Airflow" .
+
+bldg:VAV1_03_Heating_Setpoint a brick:Zone_Air_Heating_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV1_03_Heating_Setpoint" .
+
+bldg:VAV1_03_Heating_Signal a brick:Heating_Command ;
+    ref:hasExternalReference "VAV1_03_Heating_Signal" .
+
+bldg:VAV1_03_Reheat_Output a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV1_03_Reheat_Output" .
+
+bldg:VAV1_03_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV1_03_Heating_Signal,
+        bldg:VAV1_03_Reheat_Output .
+
+bldg:VAV1_03_Zone_Temp a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV1_03_Zone_Temp" .
+
+bldg:VAV1_04 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "Conference VAV1_04 (VAV1_04)" ;
+    brick:hasPart bldg:VAV1_04_Damper,
+        bldg:VAV1_04_Reheat_Valve ;
+    brick:hasPoint bldg:VAV1_04_Cooling_Setpoint,
+        bldg:VAV1_04_Desired_Airflow,
+        bldg:VAV1_04_Discharge_Air_Temp,
+        bldg:VAV1_04_Discharge_Airflow,
+        bldg:VAV1_04_Heating_Setpoint,
+        bldg:VAV1_04_Zone_Temp .
+
+bldg:VAV1_04_Cooling_Setpoint a brick:Zone_Air_Cooling_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV1_04_Cooling_Setpoint" .
+
+bldg:VAV1_04_Cooling_Signal a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV1_04_Cooling_Signal" .
+
+bldg:VAV1_04_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV1_04_Cooling_Signal .
+
+bldg:VAV1_04_Desired_Airflow a brick:Supply_Air_Flow_Setpoint ;
+    ref:hasExternalReference "VAV1_04_Desired_Airflow" .
+
+bldg:VAV1_04_Discharge_Air_Temp a brick:Supply_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV1_04_Discharge_Air_Temp" .
+
+bldg:VAV1_04_Discharge_Airflow a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV1_04_Discharge_Airflow" .
+
+bldg:VAV1_04_Heating_Setpoint a brick:Zone_Air_Heating_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV1_04_Heating_Setpoint" .
+
+bldg:VAV1_04_Heating_Signal a brick:Heating_Command ;
+    ref:hasExternalReference "VAV1_04_Heating_Signal" .
+
+bldg:VAV1_04_Reheat_Output a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV1_04_Reheat_Output" .
+
+bldg:VAV1_04_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV1_04_Heating_Signal,
+        bldg:VAV1_04_Reheat_Output .
+
+bldg:VAV1_04_Zone_Temp a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV1_04_Zone_Temp" .
+
+bldg:VAV1_05 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "Open Office VAV1_05 (VAV1_05)" ;
+    brick:hasPart bldg:VAV1_05_Damper,
+        bldg:VAV1_05_Reheat_Valve ;
+    brick:hasPoint bldg:VAV1_05_Cooling_Setpoint,
+        bldg:VAV1_05_Desired_Airflow,
+        bldg:VAV1_05_Discharge_Air_Temp,
+        bldg:VAV1_05_Discharge_Airflow,
+        bldg:VAV1_05_Heating_Setpoint,
+        bldg:VAV1_05_Zone_Temp .
+
+bldg:VAV1_05_Cooling_Setpoint a brick:Zone_Air_Cooling_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV1_05_Cooling_Setpoint" .
+
+bldg:VAV1_05_Cooling_Signal a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV1_05_Cooling_Signal" .
+
+bldg:VAV1_05_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV1_05_Cooling_Signal .
+
+bldg:VAV1_05_Desired_Airflow a brick:Supply_Air_Flow_Setpoint ;
+    ref:hasExternalReference "VAV1_05_Desired_Airflow" .
+
+bldg:VAV1_05_Discharge_Air_Temp a brick:Supply_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV1_05_Discharge_Air_Temp" .
+
+bldg:VAV1_05_Discharge_Airflow a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV1_05_Discharge_Airflow" .
+
+bldg:VAV1_05_Heating_Setpoint a brick:Zone_Air_Heating_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV1_05_Heating_Setpoint" .
+
+bldg:VAV1_05_Heating_Signal a brick:Heating_Command ;
+    ref:hasExternalReference "VAV1_05_Heating_Signal" .
+
+bldg:VAV1_05_Reheat_Output a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV1_05_Reheat_Output" .
+
+bldg:VAV1_05_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV1_05_Heating_Signal,
+        bldg:VAV1_05_Reheat_Output .
+
+bldg:VAV1_05_Zone_Temp a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV1_05_Zone_Temp" .
+
+bldg:VAV1_06 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "Offices 108_110 VAV1_06 (VAV1_06)" ;
+    brick:hasPart bldg:VAV1_06_Damper,
+        bldg:VAV1_06_Reheat_Valve ;
+    brick:hasPoint bldg:VAV1_06_Cooling_Setpoint,
+        bldg:VAV1_06_Desired_Airflow,
+        bldg:VAV1_06_Discharge_Air_Temp,
+        bldg:VAV1_06_Discharge_Airflow,
+        bldg:VAV1_06_Heating_Setpoint,
+        bldg:VAV1_06_Zone_Temp .
+
+bldg:VAV1_06_Cooling_Setpoint a brick:Zone_Air_Cooling_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV1_06_Cooling_Setpoint" .
+
+bldg:VAV1_06_Cooling_Signal a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV1_06_Cooling_Signal" .
+
+bldg:VAV1_06_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV1_06_Cooling_Signal .
+
+bldg:VAV1_06_Desired_Airflow a brick:Supply_Air_Flow_Setpoint ;
+    ref:hasExternalReference "VAV1_06_Desired_Airflow" .
+
+bldg:VAV1_06_Discharge_Air_Temp a brick:Supply_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV1_06_Discharge_Air_Temp" .
+
+bldg:VAV1_06_Discharge_Airflow a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV1_06_Discharge_Airflow" .
+
+bldg:VAV1_06_Heating_Setpoint a brick:Zone_Air_Heating_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV1_06_Heating_Setpoint" .
+
+bldg:VAV1_06_Heating_Signal a brick:Heating_Command ;
+    ref:hasExternalReference "VAV1_06_Heating_Signal" .
+
+bldg:VAV1_06_Reheat_Output a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV1_06_Reheat_Output" .
+
+bldg:VAV1_06_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV1_06_Heating_Signal,
+        bldg:VAV1_06_Reheat_Output .
+
+bldg:VAV1_06_Zone_Temp a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV1_06_Zone_Temp" .
+
+bldg:VAV1_07 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "Huddle Room VAV1_07 (VAV1_07)" ;
+    brick:hasPart bldg:VAV1_07_Damper,
+        bldg:VAV1_07_Reheat_Valve ;
+    brick:hasPoint bldg:VAV1_07_Cooling_Setpoint,
+        bldg:VAV1_07_Desired_Airflow,
+        bldg:VAV1_07_Discharge_Air_Temp,
+        bldg:VAV1_07_Discharge_Airflow,
+        bldg:VAV1_07_Heating_Setpoint,
+        bldg:VAV1_07_Zone_Temp .
+
+bldg:VAV1_07_Cooling_Setpoint a brick:Zone_Air_Cooling_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV1_07_Cooling_Setpoint" .
+
+bldg:VAV1_07_Cooling_Signal a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV1_07_Cooling_Signal" .
+
+bldg:VAV1_07_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV1_07_Cooling_Signal .
+
+bldg:VAV1_07_Desired_Airflow a brick:Supply_Air_Flow_Setpoint ;
+    ref:hasExternalReference "VAV1_07_Desired_Airflow" .
+
+bldg:VAV1_07_Discharge_Air_Temp a brick:Supply_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV1_07_Discharge_Air_Temp" .
+
+bldg:VAV1_07_Discharge_Airflow a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV1_07_Discharge_Airflow" .
+
+bldg:VAV1_07_Heating_Setpoint a brick:Zone_Air_Heating_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV1_07_Heating_Setpoint" .
+
+bldg:VAV1_07_Heating_Signal a brick:Heating_Command ;
+    ref:hasExternalReference "VAV1_07_Heating_Signal" .
+
+bldg:VAV1_07_Reheat_Output a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV1_07_Reheat_Output" .
+
+bldg:VAV1_07_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV1_07_Heating_Signal,
+        bldg:VAV1_07_Reheat_Output .
+
+bldg:VAV1_07_Zone_Temp a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV1_07_Zone_Temp" .
+
+bldg:VAV1_08 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "Training Room Nine  VAV1_08 (VAV1_08)" ;
+    brick:hasPart bldg:VAV1_08_Damper,
+        bldg:VAV1_08_Reheat_Valve ;
+    brick:hasPoint bldg:VAV1_08_Cooling_Setpoint,
+        bldg:VAV1_08_Desired_Airflow,
+        bldg:VAV1_08_Discharge_Air_Temp,
+        bldg:VAV1_08_Discharge_Airflow,
+        bldg:VAV1_08_Heating_Setpoint,
+        bldg:VAV1_08_Zone_Temp .
+
+bldg:VAV1_08_Cooling_Setpoint a brick:Zone_Air_Cooling_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV1_08_Cooling_Setpoint" .
+
+bldg:VAV1_08_Cooling_Signal a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV1_08_Cooling_Signal" .
+
+bldg:VAV1_08_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV1_08_Cooling_Signal .
+
+bldg:VAV1_08_Desired_Airflow a brick:Supply_Air_Flow_Setpoint ;
+    ref:hasExternalReference "VAV1_08_Desired_Airflow" .
+
+bldg:VAV1_08_Discharge_Air_Temp a brick:Supply_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV1_08_Discharge_Air_Temp" .
+
+bldg:VAV1_08_Discharge_Airflow a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV1_08_Discharge_Airflow" .
+
+bldg:VAV1_08_Heating_Setpoint a brick:Zone_Air_Heating_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV1_08_Heating_Setpoint" .
+
+bldg:VAV1_08_Heating_Signal a brick:Heating_Command ;
+    ref:hasExternalReference "VAV1_08_Heating_Signal" .
+
+bldg:VAV1_08_Reheat_Output a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV1_08_Reheat_Output" .
+
+bldg:VAV1_08_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV1_08_Heating_Signal,
+        bldg:VAV1_08_Reheat_Output .
+
+bldg:VAV1_08_Zone_Temp a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV1_08_Zone_Temp" .
+
+bldg:VAV1_09 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "Training Room Twelve VAV1_09 (VAV1_09)" ;
+    brick:hasPart bldg:VAV1_09_Damper,
+        bldg:VAV1_09_Reheat_Valve ;
+    brick:hasPoint bldg:VAV1_09_Cooling_Setpoint,
+        bldg:VAV1_09_Desired_Airflow,
+        bldg:VAV1_09_Discharge_Air_Temp,
+        bldg:VAV1_09_Discharge_Airflow,
+        bldg:VAV1_09_Heating_Setpoint,
+        bldg:VAV1_09_Zone_Temp .
+
+bldg:VAV1_09_Cooling_Setpoint a brick:Zone_Air_Cooling_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV1_09_Cooling_Setpoint" .
+
+bldg:VAV1_09_Cooling_Signal a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV1_09_Cooling_Signal" .
+
+bldg:VAV1_09_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV1_09_Cooling_Signal .
+
+bldg:VAV1_09_Desired_Airflow a brick:Supply_Air_Flow_Setpoint ;
+    ref:hasExternalReference "VAV1_09_Desired_Airflow" .
+
+bldg:VAV1_09_Discharge_Air_Temp a brick:Supply_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV1_09_Discharge_Air_Temp" .
+
+bldg:VAV1_09_Discharge_Airflow a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV1_09_Discharge_Airflow" .
+
+bldg:VAV1_09_Heating_Setpoint a brick:Zone_Air_Heating_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV1_09_Heating_Setpoint" .
+
+bldg:VAV1_09_Heating_Signal a brick:Heating_Command ;
+    ref:hasExternalReference "VAV1_09_Heating_Signal" .
+
+bldg:VAV1_09_Reheat_Output a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV1_09_Reheat_Output" .
+
+bldg:VAV1_09_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV1_09_Heating_Signal,
+        bldg:VAV1_09_Reheat_Output .
+
+bldg:VAV1_09_Zone_Temp a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV1_09_Zone_Temp" .
+
+bldg:VAV1_10 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "Main Circulation Area VAV1_10 (VAV1_10)" ;
+    brick:hasPart bldg:VAV1_10_Damper,
+        bldg:VAV1_10_Reheat_Valve ;
+    brick:hasPoint bldg:VAV1_10_Cooling_Setpoint,
+        bldg:VAV1_10_Desired_Airflow,
+        bldg:VAV1_10_Discharge_Air_Temp,
+        bldg:VAV1_10_Discharge_Airflow,
+        bldg:VAV1_10_Heating_Setpoint,
+        bldg:VAV1_10_Zone_Temp .
+
+bldg:VAV1_10_Cooling_Setpoint a brick:Zone_Air_Cooling_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV1_10_Cooling_Setpoint" .
+
+bldg:VAV1_10_Cooling_Signal a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV1_10_Cooling_Signal" .
+
+bldg:VAV1_10_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV1_10_Cooling_Signal .
+
+bldg:VAV1_10_Desired_Airflow a brick:Supply_Air_Flow_Setpoint ;
+    ref:hasExternalReference "VAV1_10_Desired_Airflow" .
+
+bldg:VAV1_10_Discharge_Air_Temp a brick:Supply_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV1_10_Discharge_Air_Temp" .
+
+bldg:VAV1_10_Discharge_Airflow a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV1_10_Discharge_Airflow" .
+
+bldg:VAV1_10_Heating_Setpoint a brick:Zone_Air_Heating_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV1_10_Heating_Setpoint" .
+
+bldg:VAV1_10_Heating_Signal a brick:Heating_Command ;
+    ref:hasExternalReference "VAV1_10_Heating_Signal" .
+
+bldg:VAV1_10_Reheat_Output a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV1_10_Reheat_Output" .
+
+bldg:VAV1_10_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV1_10_Heating_Signal,
+        bldg:VAV1_10_Reheat_Output .
+
+bldg:VAV1_10_Zone_Temp a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV1_10_Zone_Temp" .
+
+bldg:VAV2_01 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "GE Additive Manufacturing VAV2_01 (VAV2_01)" ;
+    brick:hasPart bldg:VAV2_01_Damper,
+        bldg:VAV2_01_Reheat_Valve ;
+    brick:hasPoint bldg:VAV2_01_Cooling_Setpoint,
+        bldg:VAV2_01_Desired_Airflow,
+        bldg:VAV2_01_Discharge_Air_Temp,
+        bldg:VAV2_01_Discharge_Airflow,
+        bldg:VAV2_01_Heating_Setpoint,
+        bldg:VAV2_01_Zone_Temp .
+
+bldg:VAV2_01_Cooling_Setpoint a brick:Zone_Air_Cooling_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV2_01_Cooling_Setpoint" .
+
+bldg:VAV2_01_Cooling_Signal a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV2_01_Cooling_Signal" .
+
+bldg:VAV2_01_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV2_01_Cooling_Signal .
+
+bldg:VAV2_01_Desired_Airflow a brick:Supply_Air_Flow_Setpoint ;
+    ref:hasExternalReference "VAV2_01_Desired_Airflow" .
+
+bldg:VAV2_01_Discharge_Air_Temp a brick:Supply_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV2_01_Discharge_Air_Temp" .
+
+bldg:VAV2_01_Discharge_Airflow a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV2_01_Discharge_Airflow" .
+
+bldg:VAV2_01_Heating_Setpoint a brick:Zone_Air_Heating_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV2_01_Heating_Setpoint" .
+
+bldg:VAV2_01_Heating_Signal a brick:Heating_Command ;
+    ref:hasExternalReference "VAV2_01_Heating_Signal" .
+
+bldg:VAV2_01_Reheat_Output a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV2_01_Reheat_Output" .
+
+bldg:VAV2_01_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV2_01_Heating_Signal,
+        bldg:VAV2_01_Reheat_Output .
+
+bldg:VAV2_01_Zone_Temp a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV2_01_Zone_Temp" .
+
+bldg:VAV2_02 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "GE Additive Manufacturing VAV2_02 (VAV2_02)" ;
+    brick:hasPart bldg:VAV2_02_Damper,
+        bldg:VAV2_02_Reheat_Valve ;
+    brick:hasPoint bldg:VAV2_02_Cooling_Setpoint,
+        bldg:VAV2_02_Desired_Airflow,
+        bldg:VAV2_02_Discharge_Air_Temp,
+        bldg:VAV2_02_Discharge_Airflow,
+        bldg:VAV2_02_Heating_Setpoint,
+        bldg:VAV2_02_Zone_Temp .
+
+bldg:VAV2_02_Cooling_Setpoint a brick:Zone_Air_Cooling_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV2_02_Cooling_Setpoint" .
+
+bldg:VAV2_02_Cooling_Signal a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV2_02_Cooling_Signal" .
+
+bldg:VAV2_02_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV2_02_Cooling_Signal .
+
+bldg:VAV2_02_Desired_Airflow a brick:Supply_Air_Flow_Setpoint ;
+    ref:hasExternalReference "VAV2_02_Desired_Airflow" .
+
+bldg:VAV2_02_Discharge_Air_Temp a brick:Supply_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV2_02_Discharge_Air_Temp" .
+
+bldg:VAV2_02_Discharge_Airflow a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV2_02_Discharge_Airflow" .
+
+bldg:VAV2_02_Heating_Setpoint a brick:Zone_Air_Heating_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV2_02_Heating_Setpoint" .
+
+bldg:VAV2_02_Heating_Signal a brick:Heating_Command ;
+    ref:hasExternalReference "VAV2_02_Heating_Signal" .
+
+bldg:VAV2_02_Reheat_Output a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV2_02_Reheat_Output" .
+
+bldg:VAV2_02_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV2_02_Heating_Signal,
+        bldg:VAV2_02_Reheat_Output .
+
+bldg:VAV2_02_Zone_Temp a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV2_02_Zone_Temp" .
+
+bldg:VAV2_03 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "GE Additive Manufacturing VAV2_03 (VAV2_03)" ;
+    brick:hasPart bldg:VAV2_03_Damper,
+        bldg:VAV2_03_Reheat_Valve ;
+    brick:hasPoint bldg:VAV2_03_Cooling_Setpoint,
+        bldg:VAV2_03_Desired_Airflow,
+        bldg:VAV2_03_Discharge_Air_Temp,
+        bldg:VAV2_03_Discharge_Airflow,
+        bldg:VAV2_03_Heating_Setpoint,
+        bldg:VAV2_03_Zone_Temp .
+
+bldg:VAV2_03_Cooling_Setpoint a brick:Zone_Air_Cooling_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV2_03_Cooling_Setpoint" .
+
+bldg:VAV2_03_Cooling_Signal a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV2_03_Cooling_Signal" .
+
+bldg:VAV2_03_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV2_03_Cooling_Signal .
+
+bldg:VAV2_03_Desired_Airflow a brick:Supply_Air_Flow_Setpoint ;
+    ref:hasExternalReference "VAV2_03_Desired_Airflow" .
+
+bldg:VAV2_03_Discharge_Air_Temp a brick:Supply_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV2_03_Discharge_Air_Temp" .
+
+bldg:VAV2_03_Discharge_Airflow a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV2_03_Discharge_Airflow" .
+
+bldg:VAV2_03_Heating_Setpoint a brick:Zone_Air_Heating_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV2_03_Heating_Setpoint" .
+
+bldg:VAV2_03_Heating_Signal a brick:Heating_Command ;
+    ref:hasExternalReference "VAV2_03_Heating_Signal" .
+
+bldg:VAV2_03_Reheat_Output a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV2_03_Reheat_Output" .
+
+bldg:VAV2_03_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV2_03_Heating_Signal,
+        bldg:VAV2_03_Reheat_Output .
+
+bldg:VAV2_03_Zone_Temp a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV2_03_Zone_Temp" .
+
+bldg:VAV2_04 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "GE Binder Jet VAV2_04 (VAV2_04)" ;
+    brick:hasPart bldg:VAV2_04_Damper,
+        bldg:VAV2_04_Reheat_Valve ;
+    brick:hasPoint bldg:VAV2_04_Cooling_Setpoint,
+        bldg:VAV2_04_Desired_Airflow,
+        bldg:VAV2_04_Discharge_Air_Temp,
+        bldg:VAV2_04_Discharge_Airflow,
+        bldg:VAV2_04_Heating_Setpoint,
+        bldg:VAV2_04_Zone_Temp .
+
+bldg:VAV2_04_Cooling_Setpoint a brick:Zone_Air_Cooling_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV2_04_Cooling_Setpoint" .
+
+bldg:VAV2_04_Cooling_Signal a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV2_04_Cooling_Signal" .
+
+bldg:VAV2_04_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV2_04_Cooling_Signal .
+
+bldg:VAV2_04_Desired_Airflow a brick:Supply_Air_Flow_Setpoint ;
+    ref:hasExternalReference "VAV2_04_Desired_Airflow" .
+
+bldg:VAV2_04_Discharge_Air_Temp a brick:Supply_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV2_04_Discharge_Air_Temp" .
+
+bldg:VAV2_04_Discharge_Airflow a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV2_04_Discharge_Airflow" .
+
+bldg:VAV2_04_Heating_Setpoint a brick:Zone_Air_Heating_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV2_04_Heating_Setpoint" .
+
+bldg:VAV2_04_Heating_Signal a brick:Heating_Command ;
+    ref:hasExternalReference "VAV2_04_Heating_Signal" .
+
+bldg:VAV2_04_Reheat_Output a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV2_04_Reheat_Output" .
+
+bldg:VAV2_04_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV2_04_Heating_Signal,
+        bldg:VAV2_04_Reheat_Output .
+
+bldg:VAV2_04_Zone_Temp a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV2_04_Zone_Temp" .
+
+bldg:VAV2_05 a brick:Variable_Air_Volume_Box ;
+    rdfs:label "Mechanical room VAV2_05 (VAV2_05)" ;
+    brick:hasPart bldg:VAV2_05_Damper,
+        bldg:VAV2_05_Reheat_Valve ;
+    brick:hasPoint bldg:VAV2_05_Cooling_Setpoint,
+        bldg:VAV2_05_Desired_Airflow,
+        bldg:VAV2_05_Discharge_Air_Temp,
+        bldg:VAV2_05_Discharge_Airflow,
+        bldg:VAV2_05_Heating_Setpoint,
+        bldg:VAV2_05_Zone_Temp .
+
+bldg:VAV2_05_Cooling_Setpoint a brick:Zone_Air_Cooling_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV2_05_Cooling_Setpoint" .
+
+bldg:VAV2_05_Cooling_Signal a brick:Damper_Position_Command ;
+    ref:hasExternalReference "VAV2_05_Cooling_Signal" .
+
+bldg:VAV2_05_Damper a brick:Damper ;
+    brick:hasPoint bldg:VAV2_05_Cooling_Signal .
+
+bldg:VAV2_05_Desired_Airflow a brick:Supply_Air_Flow_Setpoint ;
+    ref:hasExternalReference "VAV2_05_Desired_Airflow" .
+
+bldg:VAV2_05_Discharge_Air_Temp a brick:Supply_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV2_05_Discharge_Air_Temp" .
+
+bldg:VAV2_05_Discharge_Airflow a brick:Supply_Air_Flow_Sensor ;
+    ref:hasExternalReference "VAV2_05_Discharge_Airflow" .
+
+bldg:VAV2_05_Heating_Setpoint a brick:Zone_Air_Heating_Temperature_Setpoint ;
+    ref:hasExternalReference "VAV2_05_Heating_Setpoint" .
+
+bldg:VAV2_05_Heating_Signal a brick:Heating_Command ;
+    ref:hasExternalReference "VAV2_05_Heating_Signal" .
+
+bldg:VAV2_05_Reheat_Output a brick:Valve_Position_Command ;
+    ref:hasExternalReference "VAV2_05_Reheat_Output" .
+
+bldg:VAV2_05_Reheat_Valve a brick:Heating_Valve ;
+    brick:hasPoint bldg:VAV2_05_Heating_Signal,
+        bldg:VAV2_05_Reheat_Output .
+
+bldg:VAV2_05_Zone_Temp a brick:Zone_Air_Temperature_Sensor ;
+    ref:hasExternalReference "VAV2_05_Zone_Temp" .
+
