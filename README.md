@@ -13,7 +13,7 @@ pretty_name: "Purdue Building Operational Dataset"
 # Purdue Building Operational Dataset
 
 Operational time-series data and [Brick](https://brickschema.org/) semantic
-models from two commercial buildings with VAV air-handling systems, released
+models from two commercial buildings with VAV-AHU systems, released
 as an open benchmark for AI-enabled building operation research.
 
 ## Overview
@@ -83,8 +83,7 @@ status and alarm points are typed only as `brick:Sensor`.
 conventions (e.g., `VAV1_ROOM_TEMP` in Building 1 vs. `VAV1_01_Zone_Temp` in
 Building 2), which makes the pair useful for testing cross-building
 generalization. Values are as exported from the BAS: temperatures appear to
-be in °F and airflow in cfm. [Confirm units for temperature, airflow, static
-pressure, and valve/damper position.]
+be in °F and airflow in cfm. 
 
 ## Quick Start
 
@@ -113,12 +112,9 @@ print(df[zone_temps].describe())
 - Fault detection and diagnostics, and metadata-driven analytics
 - Benchmarking control and optimization methods on real operational data
 
-## Anonymization and Privacy
+## Anonymization
 
-[Finalize before release. Building names and addresses are not included.
-Describe what was done to equipment and room labels in the models, and
-confirm that no occupant-identifying signals are present. State plainly that
-time-series values are as exported from the BAS and not modified.]
+Building names, addresses, tenant and organization names, and room names have been removed. Equipment and point labels in the Brick models use generic identifiers only (e.g., AHU1, VAV1_01). The datasets contain building automation system measurements only, with no occupant-identifying data. Time-series values are provided as exported from the BAS and have not been modified.
 
 ## Known Limitations
 
