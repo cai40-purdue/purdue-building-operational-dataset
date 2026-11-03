@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+type: dataset
+title: "Purdue Building Operational Dataset"
+abstract: "Operational time-series data and Brick semantic models from two buildings, released as an open benchmark for AI-enabled building operation research."
+authors:
+  - family-names: "Cai"
+    given-names: "Jie"
+    affiliation: "Purdue University"
+  - family-names: "Wang"
+    given-names: "Zicheng"
+    affiliation: "Purdue University"
+repository-code: "https://github.com/cai40-purdue/purdue-building-operational-dataset"
+license: CC-BY-4.0
+date-released: 2026-11-03
+keywords:
+  - buildings
+  - HVAC
+  - Brick Schema
+  - building automation
+  - time series
