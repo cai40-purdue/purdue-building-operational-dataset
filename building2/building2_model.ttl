@@ -4,7 +4,7 @@
 @prefix ref: <https://brickschema.org/schema/Brick/ref#> .
 
 bldg:AHU1 a brick:Air_Handling_Unit ;
-    rdfs:label "Air Handling Unit 1 (AHU1)" ;
+    rdfs:label "AHU1" ;
     brick:feeds bldg:VAV1_01,
         bldg:VAV1_02,
         bldg:VAV1_03,
@@ -50,7 +50,7 @@ bldg:AHU1 a brick:Air_Handling_Unit ;
         bldg:AHU1_Supply_Fan_Status .
 
 bldg:AHU2 a brick:Air_Handling_Unit ;
-    rdfs:label "Air Handling Unit 2 (AHU2)" ;
+    rdfs:label "AHU2" ;
     brick:feeds bldg:VAV2_01,
         bldg:VAV2_02,
         bldg:VAV2_03,
@@ -289,7 +289,7 @@ bldg:AHU2_Supply_Fan_Status a brick:Sensor ;
     ref:hasExternalReference "AHU2_Supply_Fan_Status" .
 
 bldg:VAV1_01 a brick:Variable_Air_Volume_Box ;
-    rdfs:label "Collab Lounge VAV1_01 (VAV1_01)" ;
+    rdfs:label "VAV1_01" ;
     brick:hasPart bldg:VAV1_01_Damper,
         bldg:VAV1_01_Reheat_Valve ;
     brick:hasPoint bldg:VAV1_01_Cooling_Setpoint,
@@ -334,7 +334,7 @@ bldg:VAV1_01_Zone_Temp a brick:Zone_Air_Temperature_Sensor ;
     ref:hasExternalReference "VAV1_01_Zone_Temp" .
 
 bldg:VAV1_02 a brick:Variable_Air_Volume_Box ;
-    rdfs:label "Breakroom VAV1_02 (VAV1_02)" ;
+    rdfs:label "VAV1_02" ;
     brick:hasPart bldg:VAV1_02_Damper,
         bldg:VAV1_02_Reheat_Valve ;
     brick:hasPoint bldg:VAV1_02_Cooling_Setpoint,
@@ -379,7 +379,7 @@ bldg:VAV1_02_Zone_Temp a brick:Zone_Air_Temperature_Sensor ;
     ref:hasExternalReference "VAV1_02_Zone_Temp" .
 
 bldg:VAV1_03 a brick:Variable_Air_Volume_Box ;
-    rdfs:label "Office 106 107 VAV1_03 (VAV1_03)" ;
+    rdfs:label "VAV1_03" ;
     brick:hasPart bldg:VAV1_03_Damper,
         bldg:VAV1_03_Reheat_Valve ;
     brick:hasPoint bldg:VAV1_03_Cooling_Setpoint,
@@ -424,7 +424,7 @@ bldg:VAV1_03_Zone_Temp a brick:Zone_Air_Temperature_Sensor ;
     ref:hasExternalReference "VAV1_03_Zone_Temp" .
 
 bldg:VAV1_04 a brick:Variable_Air_Volume_Box ;
-    rdfs:label "Conference VAV1_04 (VAV1_04)" ;
+    rdfs:label "VAV1_04" ;
     brick:hasPart bldg:VAV1_04_Damper,
         bldg:VAV1_04_Reheat_Valve ;
     brick:hasPoint bldg:VAV1_04_Cooling_Setpoint,
@@ -469,7 +469,7 @@ bldg:VAV1_04_Zone_Temp a brick:Zone_Air_Temperature_Sensor ;
     ref:hasExternalReference "VAV1_04_Zone_Temp" .
 
 bldg:VAV1_05 a brick:Variable_Air_Volume_Box ;
-    rdfs:label "Open Office VAV1_05 (VAV1_05)" ;
+    rdfs:label "VAV1_05" ;
     brick:hasPart bldg:VAV1_05_Damper,
         bldg:VAV1_05_Reheat_Valve ;
     brick:hasPoint bldg:VAV1_05_Cooling_Setpoint,
@@ -514,7 +514,7 @@ bldg:VAV1_05_Zone_Temp a brick:Zone_Air_Temperature_Sensor ;
     ref:hasExternalReference "VAV1_05_Zone_Temp" .
 
 bldg:VAV1_06 a brick:Variable_Air_Volume_Box ;
-    rdfs:label "Offices 108_110 VAV1_06 (VAV1_06)" ;
+    rdfs:label "VAV1_06" ;
     brick:hasPart bldg:VAV1_06_Damper,
         bldg:VAV1_06_Reheat_Valve ;
     brick:hasPoint bldg:VAV1_06_Cooling_Setpoint,
@@ -559,7 +559,7 @@ bldg:VAV1_06_Zone_Temp a brick:Zone_Air_Temperature_Sensor ;
     ref:hasExternalReference "VAV1_06_Zone_Temp" .
 
 bldg:VAV1_07 a brick:Variable_Air_Volume_Box ;
-    rdfs:label "Huddle Room VAV1_07 (VAV1_07)" ;
+    rdfs:label "VAV1_07" ;
     brick:hasPart bldg:VAV1_07_Damper,
         bldg:VAV1_07_Reheat_Valve ;
     brick:hasPoint bldg:VAV1_07_Cooling_Setpoint,
@@ -604,7 +604,7 @@ bldg:VAV1_07_Zone_Temp a brick:Zone_Air_Temperature_Sensor ;
     ref:hasExternalReference "VAV1_07_Zone_Temp" .
 
 bldg:VAV1_08 a brick:Variable_Air_Volume_Box ;
-    rdfs:label "Training Room Nine  VAV1_08 (VAV1_08)" ;
+    rdfs:label "VAV1_08" ;
     brick:hasPart bldg:VAV1_08_Damper,
         bldg:VAV1_08_Reheat_Valve ;
     brick:hasPoint bldg:VAV1_08_Cooling_Setpoint,
@@ -649,7 +649,7 @@ bldg:VAV1_08_Zone_Temp a brick:Zone_Air_Temperature_Sensor ;
     ref:hasExternalReference "VAV1_08_Zone_Temp" .
 
 bldg:VAV1_09 a brick:Variable_Air_Volume_Box ;
-    rdfs:label "Training Room Twelve VAV1_09 (VAV1_09)" ;
+    rdfs:label "VAV1_09" ;
     brick:hasPart bldg:VAV1_09_Damper,
         bldg:VAV1_09_Reheat_Valve ;
     brick:hasPoint bldg:VAV1_09_Cooling_Setpoint,
@@ -694,7 +694,7 @@ bldg:VAV1_09_Zone_Temp a brick:Zone_Air_Temperature_Sensor ;
     ref:hasExternalReference "VAV1_09_Zone_Temp" .
 
 bldg:VAV1_10 a brick:Variable_Air_Volume_Box ;
-    rdfs:label "Main Circulation Area VAV1_10 (VAV1_10)" ;
+    rdfs:label "VAV1_10" ;
     brick:hasPart bldg:VAV1_10_Damper,
         bldg:VAV1_10_Reheat_Valve ;
     brick:hasPoint bldg:VAV1_10_Cooling_Setpoint,
@@ -739,7 +739,7 @@ bldg:VAV1_10_Zone_Temp a brick:Zone_Air_Temperature_Sensor ;
     ref:hasExternalReference "VAV1_10_Zone_Temp" .
 
 bldg:VAV2_01 a brick:Variable_Air_Volume_Box ;
-    rdfs:label "GE Additive Manufacturing VAV2_01 (VAV2_01)" ;
+    rdfs:label "VAV2_01" ;
     brick:hasPart bldg:VAV2_01_Damper,
         bldg:VAV2_01_Reheat_Valve ;
     brick:hasPoint bldg:VAV2_01_Cooling_Setpoint,
@@ -784,7 +784,7 @@ bldg:VAV2_01_Zone_Temp a brick:Zone_Air_Temperature_Sensor ;
     ref:hasExternalReference "VAV2_01_Zone_Temp" .
 
 bldg:VAV2_02 a brick:Variable_Air_Volume_Box ;
-    rdfs:label "GE Additive Manufacturing VAV2_02 (VAV2_02)" ;
+    rdfs:label "VAV2_02" ;
     brick:hasPart bldg:VAV2_02_Damper,
         bldg:VAV2_02_Reheat_Valve ;
     brick:hasPoint bldg:VAV2_02_Cooling_Setpoint,
@@ -829,7 +829,7 @@ bldg:VAV2_02_Zone_Temp a brick:Zone_Air_Temperature_Sensor ;
     ref:hasExternalReference "VAV2_02_Zone_Temp" .
 
 bldg:VAV2_03 a brick:Variable_Air_Volume_Box ;
-    rdfs:label "GE Additive Manufacturing VAV2_03 (VAV2_03)" ;
+    rdfs:label "VAV2_03" ;
     brick:hasPart bldg:VAV2_03_Damper,
         bldg:VAV2_03_Reheat_Valve ;
     brick:hasPoint bldg:VAV2_03_Cooling_Setpoint,
@@ -874,7 +874,7 @@ bldg:VAV2_03_Zone_Temp a brick:Zone_Air_Temperature_Sensor ;
     ref:hasExternalReference "VAV2_03_Zone_Temp" .
 
 bldg:VAV2_04 a brick:Variable_Air_Volume_Box ;
-    rdfs:label "GE Binder Jet VAV2_04 (VAV2_04)" ;
+    rdfs:label "VAV2_04" ;
     brick:hasPart bldg:VAV2_04_Damper,
         bldg:VAV2_04_Reheat_Valve ;
     brick:hasPoint bldg:VAV2_04_Cooling_Setpoint,
@@ -919,7 +919,7 @@ bldg:VAV2_04_Zone_Temp a brick:Zone_Air_Temperature_Sensor ;
     ref:hasExternalReference "VAV2_04_Zone_Temp" .
 
 bldg:VAV2_05 a brick:Variable_Air_Volume_Box ;
-    rdfs:label "Mechanical room VAV2_05 (VAV2_05)" ;
+    rdfs:label "VAV2_05" ;
     brick:hasPart bldg:VAV2_05_Damper,
         bldg:VAV2_05_Reheat_Valve ;
     brick:hasPoint bldg:VAV2_05_Cooling_Setpoint,
